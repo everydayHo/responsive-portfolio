@@ -1,0 +1,33 @@
+@charset "utf-8";
+@import url('./reset.css');
+@import url('./common.css');
+
+:root {
+	/* Color */
+	--bg-color: #fdf9f0;
+	--menu-color: #333333;
+	--color-dark-grey: #333333;
+	--font-color: #333333;
+	--point-color: #d3c592;
+	--bar-color: #524239;
+	--parllax-font-color: #ffffff;
+
+	/* Font size */
+	--font-x-large: 6rem;
+	--font-large: 3.6rem;
+	--font-medium: 2.2rem;
+	--font-regular: 1.6rem;
+	--font-small: 1.4rem;
+	--font-micro: 1.2rem;
+
+	/* Font weight */
+	--weight-extra-bold: 800;
+	--weight-bold: 700;
+	--weight-semi-bold: 600;
+	--weight-medium: 500;
+	--weight-regular: 400;
+	-—weight-light: 300;
+
+	/* size */
+	--size-border-radius: 20px;
+}
