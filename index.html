@@ -20,23 +20,13 @@
 		/>
 		<!-- animate css -->
 		<link rel="stylesheet" href="./css/animate.css" />
+		<!-- magnific-popup css -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+		/>
 		<!-- cSS -->
 		<link rel="stylesheet" href="./css/main.css" />
-		<!-- jQuery JS -->
-		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-		<!-- lettering js -->
-		<script src="./js/jquery.lettering.js"></script>
-		<!-- textillate -->
-		<script src="./js/jquery.textillate.js"></script>
-		<!-- smooth scroll -->
-		<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
-		<!-- jarallax -->
-		<script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
-		<!-- gsap -->
-		<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
-		<!-- JS -->
-		<script defer src="./js/main.js"></script>
 	</head>
 	<body>
 		<div id="cursor">
@@ -352,22 +342,24 @@
 				<div class="container">
 					<div class="row about-wrap">
 						<div class="col-md-7 about-text">
-							<h2 class="title">About Me</h2>
-							<h3>attraction</h3>
-							<h4 data-scroll data-scroll-speed="1">
+							<h2 class="title" data-scroll="" data-scroll-speed="1">
+								About Me
+							</h2>
+							<h3 data-scroll data-scroll-speed="1">attraction</h3>
+							<h4 data-scroll data-scroll-speed="2">
 								사용성있는 웹페이지를 만들기 위해 <br />
 								노력하는 웹퍼블리셔 조정우입니다.
 							</h4>
-							<p data-scroll data-scroll-speed="1">
+							<p data-scroll data-scroll-speed="2">
 								약속과 신뢰를 중요하게 여기며, 꼼꼼한 성격과 높은 집중력으로
 								작업물의 완성도를 높이는데 자신있는 노력형 웹퍼블리셔입니다.
 							</p>
-							<p data-scroll data-scroll-speed="1">
+							<p data-scroll data-scroll-speed="2">
 								매일매일 빠르게 발전하는 기술들을 익히는 걸 즐겨하며, 잘
 								해결되지 않는 문제를 해결할 때 즐거움이 코딩을 하는 가장
 								매력적인 부분이라고 생각합니다.
 							</p>
-							<p data-scroll data-scroll-speed="1">
+							<p data-scroll data-scroll-speed="2">
 								제가 맡은 부분의 일은 책임지고 최선의 결과를 내도록 하겠습니다.
 							</p>
 						</div>
@@ -382,7 +374,7 @@
 							<div class="row">
 								<img
 									src="./images/parallax-real-1.png"
-									alt="parallx img"
+									alt="parallax img"
 									class="jarallax-img"
 								/>
 
@@ -502,7 +494,12 @@
 						<h2 class="title" data-scroll data-scroll-speed="1">Skills</h2>
 						<h3 data-scroll data-scroll-speed="1">WORKS SKILLS</h3>
 						<ul>
-							<li class="col-md-3 work-card" data-scroll data-scroll-speed="2">
+							<li
+								class="col-md-3 work-card"
+								data-scroll
+								data-scroll-speed="2"
+								data-scroll-delay="0.18"
+							>
 								<div class="spinner-box">
 									<div class="leo-border-1">
 										<div class="leo-core-1"></div>
@@ -514,7 +511,12 @@
 								<h2>DESIGN</h2>
 								<h3 class="counter" data-number="80">80%</h3>
 							</li>
-							<li class="col-md-3 work-card" data-scroll data-scroll-speed="2">
+							<li
+								class="col-md-3 work-card"
+								data-scroll
+								data-scroll-speed="2"
+								data-scroll-delay="0.12"
+							>
 								<div class="spinner-box">
 									<div class="blue-orbit leo"></div>
 									<div class="green-orbit leo"></div>
@@ -526,7 +528,12 @@
 								<h2>JAVASCRIPT</h2>
 								<h3 class="counter" data-number="83">83%</h3>
 							</li>
-							<li class="col-md-3 work-card" data-scroll data-scroll-speed="2">
+							<li
+								class="col-md-3 work-card"
+								data-scroll
+								data-scroll-speed="2"
+								data-scroll-delay="0.06"
+							>
 								<div class="spinner-box">
 									<div class="configure-border-1">
 										<div class="configure-core"></div>
@@ -538,7 +545,12 @@
 								<h2>TYPESCRIPT</h2>
 								<h3 class="counter" data-number="65">65%</h3>
 							</li>
-							<li class="col-md-3 work-card" data-scroll data-scroll-speed="2">
+							<li
+								class="col-md-3 work-card"
+								data-scroll
+								data-scroll-speed="2"
+								data-scroll-delay="0.04"
+							>
 								<div class="spinner-box">
 									<div class="solar-system">
 										<div class="earth-orbit orbit">
@@ -561,9 +573,155 @@
 				</div>
 			</section>
 			<section id="portfolio">
-				<h1>hi</h1>
+				<div class="container work-wrap">
+					<div class="row">
+						<div class="portfolio-text">
+							<h2 class="title">What I do</h2>
+							<h3>MY SERVICE</h3>
+						</div>
+						<!-- g-menu -->
+						<div class="g-menu work-menu">
+							<ul>
+								<li>
+									<a href="#" id="m1" class="underline_from_left active">ALL</a>
+								</li>
+								<li>
+									<a href="#" id="m2" class="underline_from_left">WEB</a>
+								</li>
+								<li>
+									<a href="#" id="m3" class="underline_from_left">RWD</a>
+								</li>
+								<li>
+									<a href="#" id="m4" class="underline_from_left">APP</a>
+								</li>
+							</ul>
+						</div>
+						<!-- gallery -->
+						<div class="grid work-container" id="gallery">
+							<ul>
+									<li class="grid-item g3">
+									<a href="#popup7">
+										<figure class="project-card">
+											<img src="./images/lg/work-card7.png" alt="work photo7" />
+											<figcaption>
+												<h2>Megabox</h2>
+												<p><a href="">view</a></p>
+											</figcaption>
+										</figure>
+									</a>
+								</li>
+								</li>
+								<li class="grid-item g1">
+									<a href="#popup3">
+										<figure class="project-card">
+											<img src="./images/lg/work-card3.png" alt="work photo3" />
+											<figcaption>
+												<h2>Hyundai Motors</h2>
+												<p><a href="">view</a></p>
+											</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li class="grid-item g1">
+									<a href="#popup4">
+										<figure class="project-card">
+											<img src="./images/lg/work-card4.png" alt="work photo4" />
+											<figcaption>
+												<h2>Samsung JBL</h2>
+												<p><a href="">view</a></p>
+											</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li class="grid-item g2">
+									<a href="#popup5">
+										<figure class="project-card">
+											<img src="./images/lg/work-card5.png" alt="work photo5" />
+											<figcaption>
+												<h2>Retina Web Design</h2>
+												<p><a href="">view</a></p>
+											</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li class="grid-item g1">
+									<a href="#popup2">
+										<figure class="project-card">
+											<img src="./images/lg/work-card2.png" alt="work photo2" />
+											<figcaption>
+												<h2>Spectacle</h2>
+												<p><a href="">view</a></p>
+											</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li class="grid-item g2">
+									<a href="#popup6">
+										<figure class="project-card">
+											<img src="./images/lg/work-card6.png" alt="work photo6" />
+											<figcaption>
+												<h2>Alia Corns</h2>
+												<p><a href="">view</a></p>
+											</figcaption>
+										</figure>
+									</a>
+								</li>
+							
+								<li class="grid-item g3">
+									<a href="#popup8">
+										<figure class="project-card">
+											<img src="./images/lg/work-card8.png" alt="work photo8" />
+											<figcaption>
+												<h2>Web App project</h2>
+												<p><a href="">view </a></p>
+											</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li class="grid-item g1">
+									<a href="#popup1">
+										<figure class="project-card">
+											<img src="./images/lg/work-card1.png" alt="work photo1" />
+											<figcaption>
+												<h2>960GS</h2>
+												<p><a href="">view</a></p>
+											</figcaption>
+										</figure>
+									</a>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</section>
-			<section id="contact"></section>
+			<section id="contact">
+				<div class="container contact-wrap">
+					<div class="row">
+							<h2 class="title" data-scroll data-scroll-speed="1">What I do</h2>
+							<h3 data-scroll data-scroll-speed="1">MY SERVICE</h3>
+							<div class="contact-container">
+							<div class="col-md-6 contact-text"data-scroll data-scroll-speed="2">
+								<div class="con-text">
+									<h3>PHONE</h3>
+									<p>010-9858-1103</p>
+								</div>
+								<div class="con-text">
+									<h3>EMAIL</h3>
+									<p>jungwoopage@gmail.com</p>
+								</div>
+								<div class="con-text">
+									<h3>LIVE IN</h3>
+									<p>Gyeonggi-do  Ansan-si</p>
+								</div>
+								<p class="btn"><a href="#">이력서보기</a></p>
+							</div>
+							<div class="col-md-6 talk-container" data-scroll data-scroll-speed="2">
+								<h3>카카오톡 오픈 채팅하기</h3>
+								<img src="./images/lg/kakaotalk-img.png" alt="kakaotalk img"/>
+							</div>
+							</div>
+					</div>
+				</div>
+			</section>
 		</main>
 		<!-- arrow up -->
 		<div class="progress-wrap active-progress" cursor-class="arrow">
@@ -583,5 +741,26 @@
 				></path>
 			</svg>
 		</div>
+		<!-- jQuery JS -->
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<!-- lettering js -->
+		<script src="./js/jquery.lettering.js"></script>
+		<!-- textillate -->
+		<script src="./js/jquery.textillate.js"></script>
+		<!-- smooth scroll -->
+		<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+		<!-- jarallax -->
+		<script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
+		<!-- gsap -->
+		<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+		<!-- isotope -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+		<!-- magnific-popup js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+		<!-- gallery js -->
+		<script src="./js/gallery.js"></script>
+		<!-- JS -->
+		<script defer src="./js/main.js"></script>
 	</body>
 </html>

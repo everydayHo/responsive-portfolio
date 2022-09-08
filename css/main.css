@@ -153,7 +153,29 @@ a:hover {
 	color: var(--point-color);
 	text-decoration: none;
 }
+.btn {
+	width: 140px;
+	height: 50px;
+	background: var(--bg-color);
+	border: 1px solid var(--point-color);
+	transition: 400ms ease-in-out;
+	text-align: center;
+}
+.btn a {
+	font-family: var(--montserrat);
+	font-weight: var(--weight-regular);
+	font-size: 2rem;
+	line-height: 40px;
+	color: var(--font-color);
 
+	transition: 400ms ease-in-out;
+}
+.btn:hover {
+	background: var(--point-color);
+}
+.btn:hover a {
+	color: #000;
+}
 /* ---------  Rayout --------- */
 .sec-p {
 	padding-left: 270px;
@@ -270,7 +292,8 @@ header nav ul {
 	align-items: center;
 }
 
-header nav ul li a {
+header nav ul li a,
+#portfolio .work-menu ul li a {
 	position: relative;
 	padding: 0 0.125em;
 }
@@ -285,9 +308,13 @@ a[class^='underline']:before {
 	left: 0;
 	right: 100%;
 }
-a[class^='underline']:hover:before {
+a[class^='underline']:hover:before,
+a.active::before {
 	left: 0;
 	right: 0;
+}
+a.active {
+	color: var(--point-color);
 }
 
 /* icon */
@@ -1111,7 +1138,250 @@ header .icon-box a:hover {
 /* ---------  Portfolio --------- */
 #portfolio {
 	width: 100%;
+	margin: 0 auto;
+}
+#portfolio .portfolio-text {
+	padding: 105px 0 0 105px;
+}
+
+#portfolio .work-menu {
+	width: 40%;
+	margin: 21px auto 84px;
+}
+#portfolio .work-menu ul li a {
+	font-family: var(--pretendard);
+	font-weight: var(--weight-regular);
+	font-size: 1.7rem;
+	transition: 400ms ease-in-out;
+}
+#portfolio .work-menu ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#portfolio .work-container {
+	margin: 0 80px 105px;
+}
+
+#portfolio .work-container ul li {
+	margin-right: 30px;
+}
+
+/* project card */
+.grid figure {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	margin: 10px 1%;
+	min-width: 319px;
+	max-width: 319px;
+	max-height: 325px;
+	width: 48%;
+	background: #000;
+	text-align: center;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+figure.project-card {
+	background: var(--header-color);
+	border-radius: 20px;
+}
+
+figure.project-card img {
+	height: 325px;
+}
+
+figure.project-card figcaption {
+	padding: 3em;
+}
+
+figure.project-card figcaption::before,
+figure.project-card figcaption::after {
+	position: absolute;
+	content: '';
+	opacity: 0;
+}
+
+figure.project-card figcaption::before {
+	top: 50px;
+	right: 30px;
+	bottom: 50px;
+	left: 30px;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: scale(0, 1);
+	transform: scale(0, 1);
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+figure.project-card figcaption::after {
+	top: 30px;
+	right: 50px;
+	bottom: 30px;
+	left: 50px;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	-webkit-transform: scale(1, 0);
+	transform: scale(1, 0);
+	-webkit-transform-origin: 100% 0;
+	transform-origin: 100% 0;
+}
+
+figure.project-card h2 {
+	font-family: var(--poppin);
+	font-weight: var(--weight-medium);
+	font-size: var(--font-medium);
+	color: var(--font-color);
+	padding-top: 6%;
+	margin-bottom: 40px;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	opacity: 0;
+}
+figure.project-card p {
+	width: 130px;
+	height: 41px;
+	background: #fff;
+	text-align: center;
+	line-height: 41px;
+	margin: 0 auto;
+	opacity: 0;
+	-webkit-transform: translate3d(0, -10px, 0);
+	transform: translate3d(0, -10px, 0);
+	-webkit-transition: background 400ms ease-in-out, opacity 0.35s,
+		-webkit-transform 0.35s;
+	transition: background 400ms ease-in-out, opacity 0.35s, transform 0.35s;
+}
+
+figure.project-card p a {
+	display: inline-block;
+	font-family: var(--montserrat);
+	font-weight: var(--weight-semi-bold);
+	font-size: 2rem;
+	text-transform: none;
+	position: relative;
+	opacity: 0;
+	-webkit-transform: translate3d(0, -10px, 0);
+	transform: translate3d(0, -10px, 0);
+	-webkit-transition: color 400ms ease-in-outㅇ, opacity 0.35s,
+		-webkit-transform 0.35s;
+	transition: color 400ms ease-in-out, opacity 0.35s, transform 0.35s;
+}
+
+figure.project-card img,
+figure.project-card h2 {
+	-webkit-transform: translate3d(0, -30px, 0);
+	transform: translate3d(0, -30px, 0);
+}
+
+figure.project-card img,
+figure.project-card figcaption::before,
+figure.project-card figcaption::after {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.project-card:hover img {
+	opacity: 0.7;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+figure.project-card p:hover {
+	background: var(--point-color);
+}
+figure.project-card p:hover a {
+	color: #fff;
+}
+
+figure.project-card:hover figcaption::before,
+figure.project-card:hover figcaption::after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.project-card:hover h2,
+figure.project-card:hover p,
+figure.project-card:hover p a {
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+figure.project-card:hover figcaption::after,
+figure.project-card:hover h2,
+figure.project-card:hover p,
+figure.project-card:hover p a,
+figure.project-card:hover img {
+	-webkit-transition-delay: 0 0.15s;
+	transition-delay: 0.15s;
+}
+/* ---------  Contact --------- */
+#contact {
+	width: 100%;
 	height: 100vh;
+}
+#contact .contact-wrap {
+	padding: 105px 60px 105px 105px;
+}
+
+#contact .contact-container {
+	margin-top: 84px;
+	padding-left: 70px;
+	display: flex;
+}
+#contact .contact-container .con-text {
+	margin-bottom: 21px;
+}
+#contact .contact-container .con-text h3 {
+	font-weight: var(--weight-regular);
+	font-size: var(--font-medium);
+	margin-bottom: 10px;
+}
+#contact .contact-container .con-textp {
+	margin-bottom: 10px;
+}
+#contact .contact-container .talk-container h3 {
+	font-weight: var(--weight-regular);
+	font-size: var(--font-regular);
+}
+#contact .contact-container .talk-container {
+	text-align: center;
+	padding: 20px 250px 0 0;
 }
 /* arrow up  */
 .progress-wrap {

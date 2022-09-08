@@ -156,6 +156,18 @@ const pageContainer = document.querySelector('[data-scroll-container]');
 const scroller = new LocomotiveScroll({
 	el: pageContainer,
 	smooth: true,
+	smoothMobile: 0,
+	multiplier: 1,
+	reloadOnContextChange: true,
+	touchMultiplier: 3,
+	smartphone: {
+		smooth: !0,
+		breakpoint: 768,
+	},
+	tablet: {
+		smooth: !0,
+		breakpoint: 960,
+	},
 });
 
 //gsap service scroll
@@ -261,7 +273,31 @@ $('.progress-wrap').on('click', function (event) {
 	event.preventDefault();
 	scroller.scrollTo(pageContainer);
 });
+
 // parallax
 $('.jarallax').jarallax({
 	speed: 0.7,
+});
+
+// menu scroll smooth
+
+const navMenu = document.querySelectorAll('header nav ul li a');
+navMenu.forEach((item) => {
+	item.addEventListener('click', (e) => {
+		e.preventDefault();
+		const linkTaget = document.querySelector(item.getAttribute('href'));
+		scroller.scrollTo(linkTaget);
+	});
+});
+
+// portfolio menu active
+
+const $workmenuActive = $('.work-menu ul li a');
+
+$workmenuActive.each(function (idx, item) {
+	$(item).on('click', function (e) {
+		e.preventDefault();
+		$workmenuActive.removeClass('active');
+		$(item).addClass('active');
+	});
 });
