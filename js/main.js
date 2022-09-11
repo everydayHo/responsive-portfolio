@@ -160,13 +160,13 @@ const scroller = new LocomotiveScroll({
 	multiplier: 1,
 	reloadOnContextChange: true,
 	touchMultiplier: 3,
-	smartphone: {
-		smooth: !0,
-		breakpoint: 768,
-	},
 	tablet: {
 		smooth: !0,
 		breakpoint: 960,
+	},
+	smartphone: {
+		smooth: !0,
+		breakpoint: 768,
 	},
 });
 
@@ -293,11 +293,17 @@ navMenu.forEach((item) => {
 // portfolio menu active
 
 const $workmenuActive = $('.work-menu ul li a');
+const $descNavActive = $('.desc-nav nav ul li a');
 
-$workmenuActive.each(function (idx, item) {
-	$(item).on('click', function (e) {
-		e.preventDefault();
-		$workmenuActive.removeClass('active');
-		$(item).addClass('active');
+function menuActive(menu) {
+	menu.each(function (idx, item) {
+		$(item).on('click', function (e) {
+			e.preventDefault();
+			menu.removeClass('active');
+			$(item).addClass('active');
+		});
 	});
-});
+}
+
+menuActive($workmenuActive);
+menuActive($descNavActive);

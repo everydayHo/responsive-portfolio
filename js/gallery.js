@@ -5,7 +5,7 @@ $(function () {
 			itemSelector: '.grid-item',
 			layoutMode: 'fitRows',
 			fitRows: {
-				gutter: 0,
+				gutter: 30,
 			},
 		});
 	});
@@ -19,7 +19,9 @@ $(function () {
 
 	// 라이트박스 초기 설정
 	$('.grid-item a').magnificPopup({
-		type: 'image',
+		type: 'inline',
+		closeOnBgClick: true,
+		closeBtnInside: true,
 		gallery: {
 			enabled: true,
 		},
@@ -32,7 +34,9 @@ $(function () {
 			filter: '.grid-item',
 		});
 		$('.grid-item a').magnificPopup({
-			type: 'image',
+			type: 'inline',
+			closeOnBgClick: true,
+			closeBtnInside: true,
 			gallery: {
 				enabled: true,
 			},
@@ -49,6 +53,8 @@ $(function () {
 		});
 		$('.g1 a').magnificPopup({
 			type: 'inline',
+			closeOnBgClick: true,
+			closeBtnInside: true,
 			gallery: {
 				enabled: true,
 			},
@@ -65,6 +71,8 @@ $(function () {
 		});
 		$('.g2 a').magnificPopup({
 			type: 'inline',
+			closeOnBgClick: true,
+			closeBtnInside: true,
 			gallery: {
 				enabled: true,
 			},
@@ -81,6 +89,8 @@ $(function () {
 		});
 		$('.g3 a').magnificPopup({
 			type: 'inline',
+			closeOnBgClick: true,
+			closeBtnInside: true,
 			gallery: {
 				enabled: true,
 			},
