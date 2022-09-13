@@ -13,6 +13,7 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
 		/>
+
 		<!-- scroll smooth -->
 		<link
 			rel="stylesheet"
@@ -28,7 +29,7 @@
 		<!-- cSS -->
 		<link rel="stylesheet" href="./css/main.css" />
 		<!-- responsive css -->
-		<link rel="stylesheet" href="./css/resposive.css" />
+		<link rel="stylesheet" href="./css/responsive.css" />
 	</head>
 	<body>
 		<div id="cursor">
@@ -37,7 +38,7 @@
 		<header class="nav-wrap">
 			<div class="desc-nav">
 				<h1>
-					<a href="#" class="logo" cursor-class="arrow"> wajo </a>
+					<a href="#home" class="logo" cursor-class="arrow"> wajo </a>
 				</h1>
 				<nav>
 					<ul>
@@ -124,12 +125,12 @@
 		<!-- mobile nav -->
 		<div class="mobile-header">
 			<div class="container">
-				<div class="row">
-					<h1 class="col-xs-5 col-sm-2">
+				<div class="row mobile-wrap">
+					<h1 class="col-8 col-sm-8 col-md-2">
 						<a href="#" class="logo" cursor-class="arrow"> wajo </a>
 					</h1>
 					<!-- tablet menu -->
-					<nav class="col-sm-10 nav-menu">
+					<nav class="col-sm-10 col-md-10 nav-menu">
 						<ul>
 							<li>
 								<a href="#home" class="underline_from_left" cursor-class="arrow"
@@ -179,7 +180,7 @@
 						</ul>
 					</nav>
 					<!-- mobile menu -->
-					<a href="#" class="col-xs-4 col-xs-offset-9 hamburger-button">
+					<a href="#" class="col-4 col-sm-4 hamburger-button">
 						<span></span>
 						<span></span>
 						<span></span>
@@ -283,10 +284,15 @@
 
 		<!-- main -->
 		<main class="sec-p" data-scroll-container>
-			<section id="home">
+			<section
+				id="home"
+				data-scroll
+				data-scroll-repeat="true"
+				data-scroll-call="event1"
+			>
 				<div class="container">
 					<div class="row home-wrap">
-						<div class="col-md-8 home-text">
+						<div class="col-12 col-sm-12 col-md-8 col-lg-8 home-text">
 							<h2>
 								<svg class="text-line on">
 									<text
@@ -307,7 +313,7 @@
 								보실 수 있습니다. :)
 							</p>
 						</div>
-						<div class="col-md-4 home-img">
+						<div class="col-12 col-sm-12 col-md-4 col-lg-4 home-img">
 							<svg
 								viewBox="0 0 450 450"
 								preserveAspectRatio="none"
@@ -340,10 +346,15 @@
 					</div>
 				</div>
 			</section>
-			<section id="about">
+			<section
+				id="about"
+				data-scroll
+				data-scroll-repeat="true"
+				data-scroll-call="event2"
+			>
 				<div class="container">
 					<div class="row about-wrap">
-						<div class="col-md-7 about-text">
+						<div class="col-12 col-md-7 col-lg-7 about-text">
 							<h2 class="title" data-scroll="" data-scroll-speed="1">
 								About Me
 							</h2>
@@ -352,20 +363,23 @@
 								사용성있는 웹페이지를 만들기 위해 <br />
 								노력하는 웹퍼블리셔 조정우입니다.
 							</h4>
-							<p data-scroll data-scroll-speed="2">
-								약속과 신뢰를 중요하게 여기며, 꼼꼼한 성격과 높은 집중력으로
-								작업물의 완성도를 높이는데 자신있는 노력형 웹퍼블리셔입니다.
-							</p>
-							<p data-scroll data-scroll-speed="2">
-								매일매일 빠르게 발전하는 기술들을 익히는 걸 즐겨하며, 잘
-								해결되지 않는 문제를 해결할 때 즐거움이 코딩을 하는 가장
-								매력적인 부분이라고 생각합니다.
-							</p>
-							<p data-scroll data-scroll-speed="2">
-								제가 맡은 부분의 일은 책임지고 최선의 결과를 내도록 하겠습니다.
-							</p>
+							<div class="about-text-container">
+								<p data-scroll data-scroll-speed="1">
+									약속과 신뢰를 중요하게 여기며, 꼼꼼한 성격과 높은 집중력으로
+									작업물의 완성도를 높이는데 자신있는 노력형 웹퍼블리셔입니다.
+								</p>
+								<p data-scroll data-scroll-speed="1">
+									매일매일 빠르게 발전하는 기술들을 익히는 걸 즐겨하며, 잘
+									해결되지 않는 문제를 해결할 때 즐거움이 코딩을 하는 가장
+									매력적인 부분이라고 생각합니다.
+								</p>
+								<p data-scroll data-scroll-speed="1">
+									제가 맡은 부분의 일은 책임지고 최선의 결과를 내도록
+									하겠습니다.
+								</p>
+							</div>
 						</div>
-						<div class="col-md-5 about-img">
+						<div class="col-12 col-md-5 col-lg-5 about-img">
 							<img src="./images/lg/about-img1.png" alt="about img" />
 						</div>
 					</div>
@@ -381,7 +395,7 @@
 								/>
 
 								<div class="about-content">
-									<div class="col-md-6 left-box">
+									<div class="col-sm-12 col-md-6 col-lg-6 left-box">
 										<h4 class="subtitle">Experience</h4>
 										<div class="text-container">
 											<h5>
@@ -398,7 +412,7 @@
 											<p>2018. 07 ~2021. 11</p>
 										</div>
 									</div>
-									<div class="col-md-6 right-box">
+									<div class="col-sm-12 col-md-6 col-lg-6 right-box">
 										<h4 class="subtitle">Education</h4>
 										<div class="text-container">
 											<h5>부흥고등학교 이공계 졸업</h5>
@@ -419,85 +433,98 @@
 					</div>
 				</div>
 			</section>
-			<section id="whatido" class="scroll-container">
+			<section
+				id="whatido"
+				class="scroll-container"
+				data-scroll
+				data-scroll-repeat="true"
+				data-scroll-call="event3"
+			>
 				<div class="ido-text">
 					<h2 class="title">What I do</h2>
 					<h3>MY SERVICE</h3>
 				</div>
-				<div class="container">
+				<div class="container-fluid">
 					<div class="row">
-						<div id="sectionPin">
-							<div class="pin-wrap">
-								<div class="service-card">
-									<img src="./images/lg/photo-box01.png" alt="service img1" />
-									<h2>DESIGN</h2>
-									<p>
-										포토샵, 일러스트레이터, XD, Figma등 디자인<br />
-										프로그램으로 기본적인 템플릿 작업이나 협업이 가능합니다.
-									</p>
-								</div>
-								<div class="service-card">
-									<img src="./images/lg/photo-box02.png" alt="service img2" />
-									<h2>HTML</h2>
-									<p>
-										웹표준과 웹 접근성을 준수하여 HTML5에서<br />
-										권장하는 마크업 방식과 시멘틱태그를 이용해서<br />
-										레이아웃을 설계합니다.
-									</p>
-								</div>
-								<div class="service-card">
-									<img src="./images/lg/photo-box03.png" alt="service img3" />
-									<h2>CSS</h2>
-									<p>
-										크로싱브라우징을 위해 안정적인 css속성을<br />
-										사용하여 HTML Element를 배치하고 디자인<br />
-										합니다. Flex, grid를 활용하여 구조를 디자인<br />
-										할 수있습니다. 보다 효과적인 작업을 위해<br />
-										SCSS문법도 익혔습니다.
-									</p>
-								</div>
-								<div class="service-card">
-									<img src="./images/lg/photo-box04.png" alt="service img4" />
-									<h2>JAVASCRIPT</h2>
-									<p>
-										Node들을 동적인 구현이 가능하도록 필수적인<br />
-										자바스크립트 문법과 브라우저 API와 ajax를<br />
-										통해 비동기로 서버와 통신하는 법을 익히고 있습니다.
-									</p>
-								</div>
-								<div class="service-card">
-									<img src="./images/lg/photo-box05.png" alt="service img5" />
-									<h2>JQUERY</h2>
-									<p>
-										자바스크립트보다 편한 작업을 위해<br />
-										Jquery라이브러리를 통한 손쉬운 구현 방식을<br />
-										익혔습니다. 작업에 필요한 라이브러리들을<br />
-										많이 익힐려고 노력했습니다.
-									</p>
-								</div>
-								<div class="service-card">
-									<img src="./images/lg/photo-box06.png" alt="service img6" />
-									<h2>RESPONSIVE WEB</h2>
-									<p>
-										크로스 브라우징을 위해 미디어 쿼리를 이용하여<br />
-										반응형 웹제작이 가능합니다.<br />
-										Bootstrap, tailwind등을 통해 보다 빠른<br />
-										작업을 할 수있는 기술을 익혔습니다.
-									</p>
+						<div id="sectionPin" class="col-sm-12">
+							<div class="row">
+								<div class="pin-wrap">
+									<div class="col-sm-6 service-card">
+										<img src="./images/lg/photo-box01.png" alt="service img1" />
+										<h2>DESIGN</h2>
+										<p>
+											포토샵, 일러스트레이터, XD, Figma등 디자인<br />
+											프로그램으로 기본적인 템플릿 작업이나 협업이 가능합니다.
+										</p>
+									</div>
+									<div class="col-sm-6 service-card">
+										<img src="./images/lg/photo-box02.png" alt="service img2" />
+										<h2>HTML</h2>
+										<p>
+											웹표준과 웹 접근성을 준수하여 HTML5에서<br />
+											권장하는 마크업 방식과 시멘틱태그를 이용해서<br />
+											레이아웃을 설계합니다.
+										</p>
+									</div>
+									<div class="col-sm-6 service-card">
+										<img src="./images/lg/photo-box03.png" alt="service img3" />
+										<h2>CSS</h2>
+										<p>
+											크로싱브라우징을 위해 안정적인 css속성을<br />
+											사용하여 HTML Element를 배치하고 디자인<br />
+											합니다. Flex, grid를 활용하여 구조를 디자인<br />
+											할 수있습니다. 보다 효과적인 작업을 위해<br />
+											SCSS문법도 익혔습니다.
+										</p>
+									</div>
+									<div class="col-sm-6 service-card">
+										<img src="./images/lg/photo-box04.png" alt="service img4" />
+										<h2>JAVASCRIPT</h2>
+										<p>
+											Node들을 동적인 구현이 가능하도록 필수적인<br />
+											자바스크립트 문법과 브라우저 API와 ajax를<br />
+											통해 비동기로 서버와 통신하는 법을 익히고 있습니다.
+										</p>
+									</div>
+									<div class="col-sm-6 service-card">
+										<img src="./images/lg/photo-box05.png" alt="service img5" />
+										<h2>JQUERY</h2>
+										<p>
+											자바스크립트보다 편한 작업을 위해<br />
+											Jquery라이브러리를 통한 손쉬운 구현 방식을<br />
+											익혔습니다. 작업에 필요한 라이브러리들을<br />
+											많이 익힐려고 노력했습니다.
+										</p>
+									</div>
+									<div class="col-sm-6 service-card">
+										<img src="./images/lg/photo-box06.png" alt="service img6" />
+										<h2>RESPONSIVE WEB</h2>
+										<p>
+											크로스 브라우징을 위해 미디어 쿼리를 이용하여<br />
+											반응형 웹제작이 가능합니다.<br />
+											Bootstrap, tailwind등을 통해 보다 빠른<br />
+											작업을 할 수있는 기술을 익혔습니다.
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section id="skills">
+			<section
+				id="skills"
+				data-scroll
+				data-scroll-repeat="true"
+				data-scroll-call="event4"
+			>
 				<div class="container">
-					<div class="row">
+					<div class="row skill-wrap">
 						<h2 class="title" data-scroll data-scroll-speed="1">Skills</h2>
 						<h3 data-scroll data-scroll-speed="1">WORKS SKILLS</h3>
 						<ul>
 							<li
-								class="col-md-3 work-card"
+								class="col-sm-6 col-md-3 work-card"
 								data-scroll
 								data-scroll-speed="2"
 								data-scroll-delay="0.18"
@@ -514,7 +541,7 @@
 								<h3 class="counter" data-number="80">80%</h3>
 							</li>
 							<li
-								class="col-md-3 work-card"
+								class="col-sm-6 col-md-3 work-card"
 								data-scroll
 								data-scroll-speed="2"
 								data-scroll-delay="0.12"
@@ -531,7 +558,7 @@
 								<h3 class="counter" data-number="83">83%</h3>
 							</li>
 							<li
-								class="col-md-3 work-card"
+								class="col-sm-6 col-md-3 work-card"
 								data-scroll
 								data-scroll-speed="2"
 								data-scroll-delay="0.06"
@@ -548,7 +575,7 @@
 								<h3 class="counter" data-number="65">65%</h3>
 							</li>
 							<li
-								class="col-md-3 work-card"
+								class="col-sm-6 col-md-3 work-card"
 								data-scroll
 								data-scroll-speed="2"
 								data-scroll-delay="0.04"
@@ -574,12 +601,17 @@
 					</div>
 				</div>
 			</section>
-			<section id="portfolio">
-				<div class="container work-wrap">
+			<section
+				id="portfolio"
+				data-scroll
+				data-scroll-repeat="true"
+				data-scroll-call="event5"
+			>
+				<div class="container-fluid work-wrap">
 					<div class="row">
 						<div class="portfolio-text">
-							<h2 class="title">What I do</h2>
-							<h3>MY SERVICE</h3>
+							<h2 class="title">Portfolio</h2>
+							<h3>Recent work</h3>
 						</div>
 						<!-- g-menu -->
 						<div class="g-menu work-menu">
@@ -809,14 +841,19 @@
 					</div>
 				</div>
 			</section>
-			<section id="contact">
+			<section
+				id="contact"
+				data-scroll
+				data-scroll-repeat="true"
+				data-scroll-call="event6"
+			>
 				<div class="container contact-wrap">
 					<div class="row">
 						<h2 class="title" data-scroll data-scroll-speed="1">Contact</h2>
 						<h3 data-scroll data-scroll-speed="1">Get in touch</h3>
 						<div class="contact-container">
 							<div
-								class="col-md-6 contact-text"
+								class="col-12 col-md-6 col-lg-6 contact-text"
 								data-scroll
 								data-scroll-speed="2"
 							>
@@ -840,7 +877,7 @@
 								</button>
 							</div>
 							<div
-								class="col-md-6 talk-container"
+								class="col-12 col-md-6 col-lg-6 talk-container"
 								data-scroll
 								data-scroll-speed="2"
 							>
@@ -1157,7 +1194,7 @@
 			</svg>
 		</div>
 		<!-- jQuery JS -->
-		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<!-- lettering js -->
 		<script src="./js/jquery.lettering.js"></script>
 		<!-- textillate -->

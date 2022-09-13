@@ -1,23 +1,48 @@
 'use strict';
+
 // navbar resize
 
 $(window).resize(function () {
-	if ($(window).width() >= 960) {
+	if ($(window).width() >= 1200) {
 		$('.nav-wrap').css({ display: 'block' });
 		$('.mobile-header').css({ display: 'none' });
+		$('main').addClass('sec-p').css({ paddingTop: 0 });
 	}
-	if ($(window).width() < 960 || $(window).width() < 768) {
+	if ($(window).width() < 1200) {
 		$('.nav-wrap').css({ display: 'none' });
 		$('.mobile-header').css({ display: 'block' });
+		$('main').removeClass('sec-p');
+	}
+	if ($(window).width() < 1200) {
+		$('#about > div:first, #skills > div:first, #contact > div:first')
+			.removeClass('container')
+			.addClass('container-fluid');
+	} else {
+		$('#about > div:first, #skills > div:first, #contact > div:first')
+			.removeClass('container-fluid')
+			.addClass('container');
 	}
 	if ($(window).width() >= 768) {
 		$('.nav-menu').css({ display: 'block' });
 		$('.hamburger-button').css({ display: 'none' });
+		$('.overlay-wrap').css({ display: 'none' });
 	}
 	if ($(window).width() < 768) {
 		$('.nav-menu').css({ display: 'none' });
 		$('.hamburger-button').css({ display: 'block' });
 		$('.overlay-wrap').css({ display: 'block' });
+		$('#home > div:first, .jarallax > div:first')
+			.removeClass('container')
+			.addClass('container-fluid');
+	} else {
+		$('#home > div:first, .jarallax > div:first')
+			.removeClass('container-fluid')
+			.addClass('container');
+	}
+	if ($(window).width() < 480) {
+		$('.project-card img').each(function (idx) {
+			$(this).attr('src', `./images/sm/project-${idx + 1}@2x.png`);
+		});
 	}
 });
 
@@ -156,17 +181,17 @@ const pageContainer = document.querySelector('[data-scroll-container]');
 const scroller = new LocomotiveScroll({
 	el: pageContainer,
 	smooth: true,
-	smoothMobile: 0,
+	smoothMobile: 1,
 	multiplier: 1,
-	reloadOnContextChange: true,
+	// reloadOnContextChange: true,
 	touchMultiplier: 3,
 	tablet: {
-		smooth: !0,
-		breakpoint: 960,
+		breakpoint: 992,
+		smooth: false,
 	},
 	smartphone: {
-		smooth: !0,
-		breakpoint: 768,
+		breakpoint: 480,
+		smooth: true,
 	},
 });
 
@@ -197,23 +222,26 @@ window.addEventListener('load', function () {
 	let horizontalScrollLength = pinWrapWidth - window.innerWidth;
 
 	// Pinning and horizontal scrolling
-	gsap.to('.pin-wrap', {
-		scrollTrigger: {
-			scroller: pageContainer, //locomotive-scroll
-			scrub: true,
-			trigger: '#whatido',
-			pin: true,
-			// anticipatePin: 1,
-			start: 'top top',
-			end: pinWrapWidth,
+	ScrollTrigger.matchMedia({
+		'(min-width: 768px)': function () {
+			gsap.to('.pin-wrap', {
+				scrollTrigger: {
+					scroller: pageContainer, //locomotive-scroll
+					scrub: true,
+					trigger: '#whatido',
+					pin: true,
+					// anticipatePin: 1,
+					start: 'top top',
+					end: pinWrapWidth,
+				},
+				x: -horizontalScrollLength,
+				ease: 'none',
+			});
+			ScrollTrigger.addEventListener('refresh', () => scroller.update()); //locomotive-scroll
+
+			ScrollTrigger.refresh();
 		},
-		x: -horizontalScrollLength,
-		ease: 'none',
 	});
-
-	ScrollTrigger.addEventListener('refresh', () => scroller.update()); //locomotive-scroll
-
-	ScrollTrigger.refresh();
 });
 
 // skill counter
@@ -260,17 +288,28 @@ scroller.on('scroll', (position) => {
 	updateProgress();
 	scroller.on('scroll', () => updateProgress());
 	var offset = 150;
-	var duration = 550;
-	scroller.on('scroll', function () {
-		if (position.scroll.y > offset) {
-			$('.progress-wrap').addClass('active-progress');
-		} else {
-			$('.progress-wrap').removeClass('active-progress');
-		}
-	});
+	var duration = 10;
+	scroller.on(
+		'scroll',
+		function () {
+			if (position.scroll.y > offset) {
+				$('.progress-wrap').addClass('active-progress');
+			} else {
+				$('.progress-wrap').removeClass('active-progress');
+			}
+		},
+		duration
+	);
 });
 $('.progress-wrap').on('click', function (event) {
 	event.preventDefault();
+	scroller.scrollTo(pageContainer);
+});
+
+// logo scroll
+
+$('h1 a').on('click', function (e) {
+	e.preventDefault();
 	scroller.scrollTo(pageContainer);
 });
 
@@ -280,20 +319,23 @@ $('.jarallax').jarallax({
 });
 
 // menu scroll smooth
-
-const navMenu = document.querySelectorAll('header nav ul li a');
-navMenu.forEach((item) => {
-	item.addEventListener('click', (e) => {
-		e.preventDefault();
-		const linkTaget = document.querySelector(item.getAttribute('href'));
-		scroller.scrollTo(linkTaget);
-	});
-});
-
-// portfolio menu active
-
 const $workmenuActive = $('.work-menu ul li a');
 const $descNavActive = $('.desc-nav nav ul li a');
+const $mobileNavActive = $('.mobile-header nav ul li a');
+
+function linkTaget(menu) {
+	menu.each(function (idx, item) {
+		item.addEventListener('click', (e) => {
+			e.preventDefault();
+			const linkTaget = document.querySelector(item.getAttribute('href'));
+			scroller.scrollTo(linkTaget);
+		});
+	});
+}
+
+linkTaget($descNavActive);
+linkTaget($mobileNavActive);
+// portfolio menu active
 
 function menuActive(menu) {
 	menu.each(function (idx, item) {
@@ -304,6 +346,37 @@ function menuActive(menu) {
 		});
 	});
 }
-
 menuActive($workmenuActive);
 menuActive($descNavActive);
+menuActive($mobileNavActive);
+
+// // menu scroll active
+
+// scroller.on('call', (callValue) => {
+// 	console.log(callValue);
+// 	if (callValue === 'event1') {
+// 		$descNavActive.removeClass('active');
+// 		$('.desc-nav nav ul li:nth-child(0) a').addClass('active');
+// 	}
+
+// 	if (callValue === 'event2') {
+// 		$descNavActive.removeClass('active');
+// 		$('.desc-nav nav ul li:nth-child(1) a').addClass('active');
+// 	}
+// 	if (callValue === 'event3') {
+// 		$descNavActive.removeClass('active');
+// 		$('.desc-nav nav ul li:nth-child(2) a').addClass('active');
+// 	}
+// 	if (callValue === 'event4') {
+// 		$descNavActive.removeClass('active');
+// 		$('.desc-nav nav ul li:nth-child(3) a').addClass('active');
+// 	}
+// 	if (callValue === 'event5') {
+// 		$descNavActive.removeClass('active');
+// 		$('.desc-nav nav ul li:nth-child(4) a').addClass('active');
+// 	}
+// 	if (callValue === 'event6') {
+// 		$descNavActive.removeClass('active');
+// 		$('.desc-nav nav ul li:nth-child(5) a').addClass('active');
+// 	}
+// });

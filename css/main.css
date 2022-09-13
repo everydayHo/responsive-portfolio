@@ -55,7 +55,7 @@
 html,
 body {
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 }
 
 html {
@@ -64,10 +64,10 @@ html {
 body {
 	font: 400 1.6rem/1.6 var(--pretendard);
 	position: relative;
-	max-width: 100%;
 	min-height: 100vh;
 	overflow-x: hidden;
 	overscroll-behavior: none;
+	-webkit-font-smoothing: antialiased;
 }
 
 .title {
@@ -319,7 +319,7 @@ header h1 .logo,
 	position: relative;
 	font-family: var(--poppin);
 	color: transparent;
-	font-size: var(--font-large);
+	font-size: 3.6rem;
 	font-weight: var(--weight-extra-bold);
 	-webkit-text-stroke: 1px #333;
 	background: url('../images/wave-color2.png');
@@ -410,226 +410,14 @@ header .icon-box a:first-child:hover {
 header .icon-box a:hover {
 	transform: scale(1.2);
 }
-
-/* ---------  mobile header --------- */
 .mobile-header {
-	width: 100%;
-	height: 84px;
-	background: var(--header-color);
-	position: fixed;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
 	display: none;
 }
-.mobile-header .container {
-	height: 100%;
-}
-.mobile-header .container .row {
-	height: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-.mobile-header .container h1 {
-	position: relative;
-	left: -30px;
-	margin-right: 80px;
-}
-.mobile-header .container h1 .logo {
-	margin-bottom: 0;
-}
-.mobile-header .container nav {
-	width: 100%;
-	position: relative;
-	right: -30px;
-	top: 5px;
-}
-.mobile-header .container nav ul {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-.mobile-header .container nav ul li {
-	margin-right: 10px;
-}
-.mobile-header .container nav ul li a {
-	position: relative;
-}
-
-/* hamberger btn */
-
 .hamburger-button {
-	position: absolute;
-	transition: 0.3s ease-in-out;
-	width: 32px;
-	height: 25px;
-	display: block;
-	z-index: 100;
 	display: none;
-}
-
-.hamburger-button span {
-	position: absolute;
-	height: 4px;
-	border-radius: 4px;
-	width: 100%;
-	background-color: var(--font-color);
-	top: 0;
-	transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
-}
-
-.hamburger-button span:nth-child(1) {
-	top: 0px;
-}
-
-.hamburger-button span:nth-child(2),
-.hamburger-button span:nth-child(3) {
-	top: 13px;
-}
-
-.hamburger-button span:nth-child(4) {
-	top: 26px;
-}
-
-.hamburger-button.active span {
-	background-color: var(--font-color);
-}
-
-.hamburger-button.active span:nth-child(1),
-.hamburger-button.active span:nth-child(4) {
-	opacity: 0;
-}
-
-.hamburger-button.active span:nth-child(2) {
-	transform: rotate(45deg);
-}
-
-.hamburger-button.active span:nth-child(3) {
-	transform: rotate(-45deg);
 }
 .overlay-wrap {
 	display: none;
-}
-.overlay {
-	position: fixed;
-	top: 84px;
-	left: 0;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 0;
-	opacity: 0;
-	visibility: hidden;
-	background: rgba(255, 255, 255, 0.5);
-	backdrop-filter: blur(5px);
-	transition: 400ms;
-}
-.mobile-header .container .overlay .mobile-menu {
-	display: block;
-	right: 0;
-	top: 0;
-}
-
-.mobile-header .container .overlay .mobile-menu ul {
-	padding: 0;
-	margin: 0;
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 150px;
-}
-.overlay nav ul li {
-	margin: 2rem 0;
-	opacity: 0;
-}
-.overlay nav ul li a {
-	opacity: 0.75;
-	position: relative;
-}
-
-.overlay.visible {
-	opacity: 0.85;
-	visibility: visible;
-	height: 100%;
-}
-.overlay.visible nav ul li {
-	animation: fadeInLeft 400ms ease forwards;
-}
-.overlay.visible nav ul li:nth-child(1) {
-	animation-delay: 230ms;
-}
-.overlay.visible nav ul li:nth-child(2) {
-	animation-delay: 260ms;
-}
-.overlay.visible nav ul li:nth-child(3) {
-	animation-delay: 290ms;
-}
-.overlay.visible nav ul li:nth-child(4) {
-	animation-delay: 320ms;
-}
-.overlay.visible nav ul li:nth-child(5) {
-	animation-delay: 350ms;
-}
-.overlay.visible nav ul li:nth-child(6) {
-	animation-delay: 380ms;
-}
-
-/* mobile icon-box */
-
-.overlay .mobile-icon-box {
-	width: 30%;
-	display: flex;
-	position: relative;
-	top: -30px;
-	justify-content: space-between;
-	align-items: center;
-}
-.overlay .mobile-icon-box a {
-	position: relative;
-	font-size: 5rem;
-	opacity: 0;
-}
-.overlay.visible .mobile-icon-box a {
-	animation: fadeInUP 500ms ease forwards;
-}
-
-.overlay.visible .mobile-icon-box a:first-child:hover {
-	fill: var(--point-color);
-}
-
-.overlay.visible .mobile-icon-box a:nth-child(1) {
-	animation-delay: 380ms;
-}
-.overlay.visible .mobile-icon-box a:nth-child(2) {
-	animation-delay: 420ms;
-}
-.overlay.visible .mobile-icon-box a:nth-child(3) {
-	animation-delay: 470ms;
-}
-
-@keyframes fadeInLeft {
-	0% {
-		opacity: 0;
-		transform: translateX(-25%);
-	}
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
-}
-@keyframes fadeInUP {
-	0% {
-		opacity: 0;
-		transform: translateY(100%);
-	}
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
 }
 
 /* ---------  Home --------- */
@@ -793,6 +581,7 @@ header .icon-box a:hover {
 
 #about {
 	width: 100%;
+	position: relative;
 }
 #about .about-wrap {
 	padding: 105px 70px 105px 105px;
@@ -821,7 +610,7 @@ header .icon-box a:hover {
 	position: relative;
 	z-index: 2;
 }
-#about .container .about-img::after {
+#about .about-img::after {
 	content: '';
 	position: absolute;
 	left: -40px;
@@ -887,7 +676,7 @@ header .icon-box a:hover {
 	z-index: 10;
 }
 
-/* ---------  What I do --------- */
+/* --------- What I do --------- */
 
 #whatido {
 	position: relative;
@@ -912,7 +701,7 @@ header .icon-box a:hover {
 	justify-content: flex-start;
 	padding: 50px 10vw;
 }
-.pin-wrap > * {
+.pin-wrap .service-card {
 	margin-right: 60px;
 }
 
@@ -926,6 +715,7 @@ header .icon-box a:hover {
 	background: var(--bg-color);
 	display: flex;
 	flex-direction: column;
+	justify-content: flex-start;
 	align-items: center;
 }
 
@@ -941,10 +731,12 @@ header .icon-box a:hover {
 
 #skills {
 	width: 100%;
-	padding: 105px 60px 105px 105px;
 	background: var(--bg-color);
 }
-.work-card {
+#skills .skill-wrap {
+	padding: 105px 60px 105px 105px;
+}
+#skills .work-card {
 	width: 250px;
 	height: 390px;
 	padding: 35px 38px 21px 27px;
@@ -954,7 +746,7 @@ header .icon-box a:hover {
 	align-items: center;
 }
 
-#skills .container .row ul {
+#skills .row ul {
 	display: flex;
 }
 
@@ -1420,7 +1212,7 @@ figure.project-card:hover img {
 	font-size: var(--font-medium);
 	margin-bottom: 10px;
 }
-#contact .contact-container .con-textp {
+#contact .contact-container .con-text p {
 	margin-bottom: 10px;
 }
 #contact .contact-container .talk-container h3 {
