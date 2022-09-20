@@ -247,6 +247,8 @@
 	}
 }
 
+/* ----------------------------------------------- */
+
 @media screen and (max-width: 768px) and (min-width: 480px) {
 	:root {
 		/* Font size */
@@ -861,10 +863,10 @@
 	}
 	#home .home-text h4 {
 		font-size: 1.6rem;
-		top: 20px;
+		top: 27px;
 	}
 	#home .home-text h3 {
-		font-size: 1.8rem;
+		font-size: 2.3rem;
 		margin-bottom: 42px;
 	}
 	.home-img {
@@ -942,6 +944,15 @@
 		height: 2940px;
 		padding: 0 0 173px 0;
 	}
+	#whatido .ido-text {
+		padding: 105px 50px 0 50px;
+	}
+	#whatido .title {
+		left: 50px;
+	}
+	#whatido .ido-text h3 {
+		margin-bottom: 42px;
+	}
 	#whatido .container-fluid {
 		width: 100%;
 		height: 100%;
@@ -988,6 +999,9 @@
 	/* ---------  Portfolio --------- */
 	#portfolio .portfolio-text {
 		padding: 105px 0 0 50px;
+	}
+	#portfolio .title {
+		left: 50px;
 	}
 	#portfolio .work-container {
 		margin: 0 50px 105px;

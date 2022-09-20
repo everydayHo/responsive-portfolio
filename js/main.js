@@ -190,8 +190,8 @@ const scroller = new LocomotiveScroll({
 	// reloadOnContextChange: true,
 	touchMultiplier: 3,
 	tablet: {
-		breakpoint: 992,
-		smooth: false,
+		breakpoint: 1024,
+		smooth: true,
 	},
 	smartphone: {
 		breakpoint: 480,
