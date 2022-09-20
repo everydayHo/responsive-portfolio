@@ -28,6 +28,7 @@
 			property="twitter:url"
 			content="https://everydayho-portfolio.netlify.app/"
 		/>
+		<link rel="icon" href="./images/favicon.ico" />
 		<title>Jo Jungwoo portfolio</title>
 
 		<!-- themify-icon -->
@@ -54,6 +55,27 @@
 		<link rel="stylesheet" href="./css/main.css" />
 		<!-- responsive css -->
 		<link rel="stylesheet" href="./css/responsive.css" />
+			<!-- jQuery JS -->
+		<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<!-- lettering js -->
+		<script src="./js/jquery.lettering.js"></script>
+		<!-- textillate -->
+		<script src="./js/jquery.textillate.js"></script>
+		<!-- smooth scroll -->
+		<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+		<!-- jarallax -->
+		<script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
+		<!-- gsap -->
+		<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+		<!-- isotope -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+		<!-- magnific-popup js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+		<!-- gallery js -->
+		<script src="./js/gallery.js"></script>
+		<!-- JS -->
+		<script defer src="./js/main.js"></script>
 	</head>
 	<body>
 		<div id="cursor">
@@ -310,9 +332,6 @@
 		<main class="sec-p" data-scroll-container>
 			<section
 				id="home"
-				data-scroll
-				data-scroll-repeat="true"
-				data-scroll-call="event1"
 			>
 				<div class="container">
 					<div class="row home-wrap">
@@ -372,9 +391,6 @@
 			</section>
 			<section
 				id="about"
-				data-scroll
-				data-scroll-repeat="true"
-				data-scroll-call="event2"
 			>
 				<div class="container">
 					<div class="row about-wrap">
@@ -460,13 +476,10 @@
 			<section
 				id="whatido"
 				class="scroll-container"
-				data-scroll
-				data-scroll-repeat="true"
-				data-scroll-call="event3"
 			>
 				<div class="ido-text">
 					<h2 class="title">What I do</h2>
-					<h3>MY SERVICE</h3>
+					<h3>My service</h3>
 				</div>
 				<div class="container-fluid">
 					<div class="row">
@@ -538,14 +551,11 @@
 			</section>
 			<section
 				id="skills"
-				data-scroll
-				data-scroll-repeat="true"
-				data-scroll-call="event4"
 			>
 				<div class="container">
 					<div class="row skill-wrap">
 						<h2 class="title" data-scroll data-scroll-speed="1">Skills</h2>
-						<h3 data-scroll data-scroll-speed="1">WORKS SKILLS</h3>
+						<h3 data-scroll data-scroll-speed="1">Works skill</h3>
 						<ul>
 							<li
 								class="col-sm-6 col-md-3 work-card"
@@ -627,9 +637,6 @@
 			</section>
 			<section
 				id="portfolio"
-				data-scroll
-				data-scroll-repeat="true"
-				data-scroll-call="event5"
 			>
 				<div class="container-fluid work-wrap">
 					<div class="row">
@@ -681,10 +688,128 @@
 						<!-- gallery -->
 						<div class="grid work-container" id="gallery">
 							<ul>
+								<li class="grid-item g2">
+									<a href="#popup1">
+										<figure class="project-card">
+											<img
+												src="./images/lg/work-card1.png"
+												alt="work photo1"
+											/>
+											<figcaption>
+												<h2>Folex</h2>
+												<button
+													type="button"
+													class="button button-circle"
+													cursor-class="arrow"
+												>
+													<a href="#popup1">
+														<div class="button-bg"></div>
+														<span>VIEW</span>
+													</a>
+												</button>
+											</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li class="grid-item g1">
+									<a href="#popup11">
+										<figure class="project-card">
+											<img
+												src="./images/lg/work-card2.png"
+												alt="work photo11"
+											/>
+											<figcaption>
+												<h2>Starbucks Site</h2>
+												<button
+													type="button"
+													class="button button-circle"
+													cursor-class="arrow"
+												>
+													<a href="#popup11">
+														<div class="button-bg"></div>
+														<span>VIEW</span>
+													</a>
+												</button>
+											</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li class="grid-item g2">
+									<a href="#popup13">
+										<figure class="project-card">
+											<img
+												src="./images/lg/work-card3.png"
+												alt="work photo13"
+											/>
+											<figcaption>
+												<h2>Expire</h2>
+												<button
+													type="button"
+													class="button button-circle"
+													cursor-class="arrow"
+												>
+													<a href="#popup13">
+														<div class="button-bg"></div>
+														<span>VIEW</span>
+													</a>
+												</button>
+											</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li class="grid-item g1">
+									<a href="#popup12">
+										<figure class="project-card">
+											<img
+												src="./images/lg/work-card4.png"
+												alt="work photo12"
+											/>
+											<figcaption>
+												<h2>OMDB API MOVIE SITE</h2>
+												<button
+													type="button"
+													class="button button-circle"
+													cursor-class="arrow"
+												>
+													<a href="#popup12">
+														<div class="button-bg"></div>
+														<span>VIEW</span>
+													</a>
+												</button>
+											</figcaption>
+										</figure>
+									</a>
+								</li>
+									<li class="grid-item g3">
+									<a href="#popup14">
+										<figure class="project-card">
+											<img
+												src="./images/lg/work-card5.png"
+												alt="work photo14"
+											/>
+											<figcaption>
+												<h2>moblie shopping site</h2>
+												<button
+													type="button"
+													class="button button-circle"
+													cursor-class="arrow"
+												>
+													<a href="#popup14">
+														<div class="button-bg"></div>
+														<span>VIEW</span>
+													</a>
+												</button>
+											</figcaption>
+										</figure>
+									</a>
+								</li>
 								<li class="grid-item g3">
 									<a href="#popup7">
 										<figure class="project-card">
-											<img src="./images/lg/work-card7.png" alt="work photo7" />
+											<img
+												src="./images/lg/work-card6.png"
+												alt="work photo7"
+											/>
 											<figcaption>
 												<h2>Megabox</h2>
 												<button
@@ -704,7 +829,10 @@
 								<li class="grid-item g1">
 									<a href="#popup3">
 										<figure class="project-card">
-											<img src="./images/lg/work-card3.png" alt="work photo3" />
+											<img
+												src="./images/lg/work-card7.png"
+												alt="work photo3"
+											/>
 											<figcaption>
 												<h2>Hyundai Motors</h2>
 												<button
@@ -722,9 +850,35 @@
 									</a>
 								</li>
 								<li class="grid-item g1">
+									<a href="#popup15">
+										<figure class="project-card">
+											<img
+												src="./images/lg/work-card8.png"
+												alt="work photo15"
+											/>
+											<figcaption>
+												<h2>shopy</h2>
+												<button
+													type="button"
+													class="button button-circle"
+													cursor-class="arrow"
+												>
+													<a href="#popup15">
+														<div class="button-bg"></div>
+														<span>VIEW</span>
+													</a>
+												</button>
+											</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li class="grid-item g1">
 									<a href="#popup4">
 										<figure class="project-card">
-											<img src="./images/lg/work-card4.png" alt="work photo4" />
+											<img
+												src="./images/lg/work-card9.png"
+												alt="work photo4"
+											/>
 											<figcaption>
 												<h2>Samsung JBL</h2>
 												<button
@@ -744,7 +898,10 @@
 								<li class="grid-item g2">
 									<a href="#popup5">
 										<figure class="project-card">
-											<img src="./images/lg/work-card5.png" alt="work photo5" />
+											<img
+												src="./images/lg/work-card10.png"
+												alt="work photo5"
+											/>
 											<figcaption>
 												<h2>Retina Web Design</h2>
 												<button
@@ -761,18 +918,20 @@
 										</figure>
 									</a>
 								</li>
-								<li class="grid-item g1">
-									<a href="#popup2">
+								<li class="grid-item g2">
+									<a href="#popup16">
 										<figure class="project-card">
-											<img src="./images/lg/work-card2.png" alt="work photo2" />
+											<img
+												src="./images/lg/work-card11.png"
+												alt="work photo16"
+											/>
 											<figcaption>
-												<h2>Spectacle</h2>
+												<h2>Waxom</h2>
 												<button
-													type="button"
 													class="button button-circle"
 													cursor-class="arrow"
 												>
-													<a href="#popup2">
+													<a href="#popup16">
 														<div class="button-bg"></div>
 														<span>VIEW</span>
 													</a>
@@ -784,7 +943,10 @@
 								<li class="grid-item g2">
 									<a href="#popup6">
 										<figure class="project-card">
-											<img src="./images/lg/work-card6.png" alt="work photo6" />
+											<img
+												src="./images/lg/work-card12.png"
+												alt="work photo6"
+											/>
 											<figcaption>
 												<h2>Alia Corns</h2>
 												<button
@@ -803,7 +965,10 @@
 								<li class="grid-item g3">
 									<a href="#popup8">
 										<figure class="project-card">
-											<img src="./images/lg/work-card8.png" alt="work photo8" />
+											<img
+												src="./images/lg/work-card13.png"
+												alt="work photo8"
+											/>
 											<figcaption>
 												<h2>Web App project</h2>
 												<button
@@ -821,29 +986,12 @@
 									</a>
 								</li>
 								<li class="grid-item g1">
-									<a href="#popup1">
-										<figure class="project-card">
-											<img src="./images/lg/work-card1.png" alt="work photo1" />
-											<figcaption>
-												<h2>960GS</h2>
-												<button
-													type="button"
-													class="button button-circle"
-													cursor-class="arrow"
-												>
-													<a href="#popup1">
-														<div class="button-bg"></div>
-														<span>VIEW</span>
-													</a>
-												</button>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li class="grid-item g1">
 									<a href="#popup9">
 										<figure class="project-card">
-											<img src="./images/lg/work-card9.png" alt="work photo1" />
+											<img
+												src="./images/lg/work-card14.png"
+												alt="work photo1"
+											/>
 											<figcaption>
 												<h2>Phono</h2>
 												<button
@@ -860,6 +1008,29 @@
 										</figure>
 									</a>
 								</li>
+								<li class="grid-item g3">
+									<a href="#popup10">
+										<figure class="project-card">
+											<img
+												src="./images/lg/work-card15.png"
+												alt="work photo10"
+											/>
+											<figcaption>
+												<h2>Mobile portfolio</h2>
+												<button
+													type="button"
+													class="button button-circle"
+													cursor-class="arrow"
+												>
+													<a href="#popup10">
+														<div class="button-bg"></div>
+														<span>VIEW</span>
+													</a>
+												</button>
+											</figcaption>
+										</figure>
+									</a>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -867,9 +1038,6 @@
 			</section>
 			<section
 				id="contact"
-				data-scroll
-				data-scroll-repeat="true"
-				data-scroll-call="event6"
 			>
 				<div class="container contact-wrap">
 					<div class="row">
@@ -893,9 +1061,9 @@
 									<h3>LIVE IN</h3>
 									<p>Gyeonggi-do Ansan-si</p>
 								</div>
-								<button type="button" class="button button-circle">
+								<button type="button" class="button button-circle" cursor-class="arrow">
 									<a href="#" target="_blank">
-										<div class="button-bg"></div>
+										<div class="button-bg" ></div>
 										<span>이력서 보기</span>
 									</a>
 								</button>
@@ -914,59 +1082,37 @@
 			</section>
 		</main>
 
-		<!-- popup1 -->
+<!-- popup1 -->
 		<div id="popup1" class="white-popup mfp-hide">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4 popup-text">
-						<h2>960GS</h2>
+						<h2>Folex</h2>
 						<p>
-							960 그리드 시스템을 사용하여 XD, 포토샵으로 디자인 시안을 토대로
-							블로그 사이트를 제작하였습니다.
+							Fullpage js를 사용하여 제작한 포트폴리오사이트입니다. work페이지를 ajax를 이용해 더보기를 만들었습니다. 제작후에 wordpress를 붙여서 테마작업을 하였습니다.
 						</p>
 						<div class="icon-box">
-							<img src="./images/icon/html.png" alt="html image" />
-							<img src="./images/icon/css-3.png" alt="css image" />
+							<img src="./images/icon/html@2x.png" alt="html image" />
+							<img src="./images/icon/css-3@2x.png" alt="css image" />
+							<img src="./images/icon/js@2x.png" alt="js image" />
 						</div>
+						<h3>기능: fullpage js / swiper js / google map </h3>
 						<button type="button" class="button button-circle">
-							<a href="http://hoit123.cafe24.com/project1" target="_blank">
+							<a href="https://everydayho.github.io/folex-website" target="_blank">
 								<div class="button-bg"></div>
 								<span>VIEW SITE</span>
+							</a>
+						</button>
+						<button type="button" class="button button-circle">
+							<a href="http://hoit12.dothome.co.kr/wp/" target="_blank">
+								<div class="button-bg"></div>
+								<span>VIEW WP</span>
 							</a>
 						</button>
 					</div>
 					<div class="col-md-8 popup-img">
 						<p class="modal-image">
 							<img src="./images/modal/1@2x.png" alt="project image1" />
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- popup2 -->
-		<div id="popup2" class="white-popup mfp-hide">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 popup-text">
-						<h2>Spectacle</h2>
-						<p>
-							1200 그리드 시스템을 사용하여 XD, 포토샵으로 디자인 시안을 토대로
-							블로그 사이트를 제작하였습니다.
-						</p>
-						<div class="icon-box">
-							<img src="./images/icon/html@2x.png" alt="html image" />
-							<img src="./images/icon/css-3@2x.png" alt="css image" />
-						</div>
-						<button type="button" class="button button-circle">
-							<a href="http://hoit123.cafe24.com/project2" target="_blank">
-								<div class="button-bg"></div>
-								<span>VIEW SITE</span>
-							</a>
-						</button>
-					</div>
-					<div class="col-md-8 popup-img">
-						<p class="modal-image">
-							<img src="./images/modal/2@2x.png" alt="project image2" />
 						</p>
 					</div>
 				</div>
@@ -1198,6 +1344,224 @@
 					</div>
 				</div>
 			</div>
+		<!-- popup10 -->
+		<div id="popup10" class="white-popup mfp-hide">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 popup-text">
+						<h2>Moblie Portfolio App</h2>
+						<p>
+							vue3사용하여 모바일 포트폴리오 사이트를 제작하였습니다. webpack, scss문법을 사용하여 구현하였습니다.
+						</p>
+						<div class="icon-box">
+							<img src="./images/icon/html@2x.png" alt="html image" />
+							<img src="./images/icon/sass@2x.png" alt="sass image" />
+							<img src="./images/icon/js@2x.png" alt="js image" />
+							<img src="./images/icon/vue@2x.png" alt="vue image" />
+						</div>
+						<h3>기능: vue3 / swiper js </h3>
+						<button type="button" class="button button-circle">
+							<a href="https://everydayho.netlify.app/" target="_blank">
+								<div class="button-bg"></div>
+								<span>VIEW SITE</span>
+							</a>
+						</button>
+					</div>
+					<div class="col-md-8 popup-img">
+						<p class="modal-image">
+							<img src="./images/modal/10@2x.png" alt="project image7" />
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- popup11 -->
+		<div id="popup11" class="white-popup mfp-hide">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 popup-text">
+						<h2>Starbucks Web Site</h2>
+						<p>
+							gsap 사용하여 애니메이션 효과와 swiper js를 사용하여 슬라이더 효과를 넣어 스타벅스 사이트를 제작하였습니다. Youtube API를 사용하여 영상을 넣었습니다.
+						</p>
+						<div class="icon-box">
+							<img src="./images/icon/html@2x.png" alt="html image" />
+							<img src="./images/icon/css-3.png" alt="sass image" />
+							<img src="./images/icon/js@2x.png" alt="js image" />
+						</div>
+						<h3>기능: swiper js / gsap / scrollmagic </h3>
+						<button type="button" class="button button-circle">
+							<a href="https://ecstatic-ritchie-85dba5.netlify.app/" target="_blank">
+								<div class="button-bg"></div>
+								<span>VIEW SITE</span>
+							</a>
+						</button>
+					</div>
+					<div class="col-md-8 popup-img">
+						<p class="modal-image">
+							<img src="./images/modal/11@2x.png" alt="project image11" />
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- popup12 -->
+		<div id="popup12" class="white-popup mfp-hide">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 popup-text">
+						<h2>OMDB API 영화검색 사이트</h2>
+						<p>
+							vue프레임워크를 사용한 영화 검색사이트입니다. OMDB API를 이용해서 영화를 검색하면 영화정보가 나오게 제작하였습니다.
+						</p>
+						<div class="icon-box">
+							<img src="./images/icon/html@2x.png" alt="html image" />
+							<img src="./images/icon/css-3.png" alt="sass image" />
+							<img src="./images/icon/js@2x.png" alt="js image" />
+							<img src="./images/icon/vue@2x.png" alt="vue image" />
+						</div>
+						<h3>기능: vue / bootstrap </h3>
+						<button type="button" class="button button-circle">
+							<a href="https://brave-tereshkova-6ea9e2.netlify.app/" target="_blank">
+								<div class="button-bg"></div>
+								<span>VIEW SITE</span>
+							</a>
+						</button>
+					</div>
+					<div class="col-md-8 popup-img">
+						<p class="modal-image">
+							<img src="./images/modal/12@2x.png" alt="project image11" />
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- popup13 -->
+		<div id="popup13" class="white-popup mfp-hide">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 popup-text">
+						<h2>Expire</h2>
+						<p>
+							bxslider와 parallax를 이용해서 기업 포트폴리오 사이트를 제작하였습니다. 폴더모양으로 전체적인 디자인을 입힌 디자인입니다.
+						</p>
+						<div class="icon-box">
+							<img src="./images/icon/html@2x.png" alt="html image" />
+							<img src="./images/icon/css-3.png" alt="css image" />
+							<img src="./images/icon/js@2x.png" alt="js image" />
+						</div>
+						<h3>기능: bx slider / parallax </h3>
+						<button type="button" class="button button-circle">
+							<a href="https://hoit123.cafe24.com/expire" target="_blank">
+								<div class="button-bg"></div>
+								<span>VIEW SITE</span>
+							</a>
+						</button>
+					</div>
+					<div class="col-md-8 popup-img">
+						<p class="modal-image">
+							<img src="./images/modal/13@2x.png" alt="project image11" />
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- popup14 -->
+		<div id="popup14" class="white-popup mfp-hide">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 popup-text">
+						<h2>Mobile Shopping Site</h2>
+						<p>
+							모바일과 브라우저 접속을 구분하여 만든 모바일 쇼핑 사이트입니다. sweetalert 라이브러리를 사용하여 제품 수량이 삭제되면 모달창이 나오게 만들었습니다. 제품의 수량이 더하거나 빠지면 자동으로 계산이 되도록 하였습니다.
+						</p>
+						<div class="icon-box">
+							<img src="./images/icon/html@2x.png" alt="html image" />
+							<img src="./images/icon/css-3.png" alt="css image" />
+							<img src="./images/icon/js@2x.png" alt="js image" />
+						</div>
+						<h3>기능: modernizr / sweetalert </h3>
+						<button type="button" class="button button-circle">
+							<a href="https://everydayho.github.io/mobile_shop/" target="_blank">
+								<div class="button-bg"></div>
+								<span>VIEW SITE</span>
+							</a>
+						</button>
+					</div>
+					<div class="col-md-8 popup-img">
+						<p class="modal-image">
+							<img src="./images/modal/14@2x.png" alt="project image11" />
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- popup15 -->
+		<div id="popup15" class="white-popup mfp-hide">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 popup-text">
+						<h2>Shopy Shopping mall</h2>
+						<p>
+							템플릿을 가지고 쇼핑몰 사이트를 만든 뒤 카페24모듈 시스템에 작업하여 카페24호스팅에 붙여서 제작하였습니다.  
+						</p>
+						<div class="icon-box">
+							<img src="./images/icon/html@2x.png" alt="html image" />
+							<img src="./images/icon/css-3.png" alt="css image" />
+							<img src="./images/icon/js@2x.png" alt="js image" />
+						</div>
+						
+						<button type="button" class="button button-circle">
+							<a href="https://everydayho.github.io/sophy-website/" target="_blank">
+								<div class="button-bg"></div>
+								<span>VIEW SITE</span>
+							</a>
+						</button>
+						<button type="button" class="button button-circle">
+							<a href="https://hoit12.cafe24.com/" target="_blank">
+								<div class="button-bg"></div>
+								<span>VIEW CAFE24</span>
+							</a>
+						</button>
+					</div>
+					<div class="col-md-8 popup-img">
+						<p class="modal-image">
+							<img src="./images/modal/15@2x.png" alt="project image11" />
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- popup16 -->
+		<div id="popup16" class="white-popup mfp-hide">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 popup-text">
+						<h2>Waxom Company Site</h2>
+						<p>
+							데스크탑과 모바일사이즈으로 제작한 반응형 사이트입니다. swiper js와 mixitup 라이브러리를 사용하요 프로젝트를 필터링하였습니다.
+						</p>
+						<div class="icon-box">
+							<img src="./images/icon/html@2x.png" alt="html image" />
+							<img src="./images/icon/css-3.png" alt="css image" />
+							<img src="./images/icon/js@2x.png" alt="js image" />
+						</div>
+						<h3>기능: siwper js / mixitup </h3>
+						<button type="button" class="button button-circle">
+							<a href="https://gilded-figolla-13462e.netlify.app" target="_blank">
+								<div class="button-bg"></div>
+								<span>VIEW SITE</span>
+							</a>
+						</button>
+						
+					</div>
+					<div class="col-md-8 popup-img">
+						<p class="modal-image">
+							<img src="./images/modal/16@2x.png" alt="project image11" />
+						</p>
+					</div>
+				</div>
+			</div>
 		</div>
 		<!-- arrow up -->
 		<div class="progress-wrap active-progress" cursor-class="arrow">
@@ -1217,26 +1581,6 @@
 				></path>
 			</svg>
 		</div>
-		<!-- jQuery JS -->
-		<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-		<!-- lettering js -->
-		<script src="./js/jquery.lettering.js"></script>
-		<!-- textillate -->
-		<script src="./js/jquery.textillate.js"></script>
-		<!-- smooth scroll -->
-		<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
-		<!-- jarallax -->
-		<script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
-		<!-- gsap -->
-		<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
-		<!-- isotope -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-		<!-- magnific-popup js -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-		<!-- gallery js -->
-		<script src="./js/gallery.js"></script>
-		<!-- JS -->
-		<script defer src="./js/main.js"></script>
+	
 	</body>
 </html>

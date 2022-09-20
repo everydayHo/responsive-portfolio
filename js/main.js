@@ -40,8 +40,12 @@ $(window).resize(function () {
 			.addClass('container');
 	}
 	if ($(window).width() < 480) {
-		$('.project-card img').each(function (idx) {
+		$('#gallery .project-card img').each(function (idx) {
 			$(this).attr('src', `./images/sm/project-${idx + 1}@2x.png`);
+		});
+	} else {
+		$('#gallery .project-card img').each(function (idx) {
+			$(this).attr('src', `./images/lg/work-card${idx + 1}.png`);
 		});
 	}
 });
@@ -270,6 +274,7 @@ $('.counter').each(function (index, element) {
 });
 
 // arrow up transition
+
 scroller.on('scroll', (position) => {
 	var progressPath = document.querySelector('.progress-wrap path');
 	var pathLength = progressPath.getTotalLength();
@@ -319,6 +324,7 @@ $('.jarallax').jarallax({
 });
 
 // menu scroll smooth
+
 const $workmenuActive = $('.work-menu ul li a');
 const $descNavActive = $('.desc-nav nav ul li a');
 const $mobileNavActive = $('.mobile-header nav ul li a');
@@ -335,6 +341,7 @@ function linkTaget(menu) {
 
 linkTaget($descNavActive);
 linkTaget($mobileNavActive);
+
 // portfolio menu active
 
 function menuActive(menu) {
@@ -349,34 +356,3 @@ function menuActive(menu) {
 menuActive($workmenuActive);
 menuActive($descNavActive);
 menuActive($mobileNavActive);
-
-// // menu scroll active
-
-// scroller.on('call', (callValue) => {
-// 	console.log(callValue);
-// 	if (callValue === 'event1') {
-// 		$descNavActive.removeClass('active');
-// 		$('.desc-nav nav ul li:nth-child(0) a').addClass('active');
-// 	}
-
-// 	if (callValue === 'event2') {
-// 		$descNavActive.removeClass('active');
-// 		$('.desc-nav nav ul li:nth-child(1) a').addClass('active');
-// 	}
-// 	if (callValue === 'event3') {
-// 		$descNavActive.removeClass('active');
-// 		$('.desc-nav nav ul li:nth-child(2) a').addClass('active');
-// 	}
-// 	if (callValue === 'event4') {
-// 		$descNavActive.removeClass('active');
-// 		$('.desc-nav nav ul li:nth-child(3) a').addClass('active');
-// 	}
-// 	if (callValue === 'event5') {
-// 		$descNavActive.removeClass('active');
-// 		$('.desc-nav nav ul li:nth-child(4) a').addClass('active');
-// 	}
-// 	if (callValue === 'event6') {
-// 		$descNavActive.removeClass('active');
-// 		$('.desc-nav nav ul li:nth-child(5) a').addClass('active');
-// 	}
-// });

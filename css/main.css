@@ -83,6 +83,9 @@ body {
 	left: -50px;
 	top: 13px;
 }
+.title + h3 {
+	text-transform: uppercase;
+}
 
 .subtitle {
 	position: relative;
@@ -1266,6 +1269,7 @@ figure.project-card:hover img {
 }
 .white-popup .popup-text .button-circle {
 	margin-bottom: 30px;
+	margin-right: 20px;
 }
 
 .white-popup .icon-box img {
