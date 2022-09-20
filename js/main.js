@@ -178,7 +178,7 @@ window.addEventListener('touchmove', mouseFunc);
 window.addEventListener('touchleave', mouseFunc);
 window.addEventListener('touchend', mouseFunc);
 
-//SMOOTH SCROLL
+//smooth controll
 gsap.registerPlugin(ScrollTrigger);
 
 const pageContainer = document.querySelector('[data-scroll-container]');
