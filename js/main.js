@@ -266,7 +266,6 @@ $('.counter').each(function (index, element) {
 			scroller: pageContainer,
 			trigger: '#skills',
 			start: 'top top',
-			markers: true,
 		},
 		onUpdate: function () {
 			count.text(zero.val.toFixed(decimals) + '%');
