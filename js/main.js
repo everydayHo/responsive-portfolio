@@ -249,31 +249,29 @@ window.addEventListener('load', function () {
 });
 
 // skill counter
-scroller.on('call', (callValue) => {
-	if (callValue === 'skilltrigger') {
-		$('.counter').each(function (index, element) {
-			var count = $(this),
-				zero = {
-					val: 0,
-				},
-				num = count.data('number'),
-				split = (num + '').split('.'), // to cover for instances of decimals
-				decimals = split.length > 1 ? split[1].length : 0;
 
-			gsap.to(zero, {
-				val: num,
-				duration: 4,
-				scrollTrigger: {
-					scroller: pageContainer,
-					trigger: '#skills',
-					start: 'top top',
-				},
-				onUpdate: function () {
-					count.text(zero.val.toFixed(decimals) + '%');
-				},
-			});
-		});
-	}
+$('.counter').each(function (index, element) {
+	var count = $(this),
+		zero = {
+			val: 0,
+		},
+		num = count.data('number'),
+		split = (num + '').split('.'), // to cover for instances of decimals
+		decimals = split.length > 1 ? split[1].length : 0;
+
+	gsap.to(zero, {
+		val: num,
+		duration: 6,
+		scrollTrigger: {
+			scroller: pageContainer,
+			trigger: '#skills',
+			start: 'top top',
+			markers: true,
+		},
+		onUpdate: function () {
+			count.text(zero.val.toFixed(decimals) + '%');
+		},
+	});
 });
 
 // arrow up transition
