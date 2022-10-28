@@ -261,7 +261,7 @@ $('.counter').each(function (index, element) {
 
 	gsap.to(zero, {
 		val: num,
-		duration: 6,
+		duration: 5,
 		scrollTrigger: {
 			scroller: pageContainer,
 			trigger: '#skills',
