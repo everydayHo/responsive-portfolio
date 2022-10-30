@@ -151,8 +151,7 @@ a {
 	text-decoration: none;
 	transition: 400ms ease-in-out;
 }
-a:focus,
-button:focus {
+a:focus {
 	outline: none;
 	color: var(--point-color);
 }
@@ -161,30 +160,31 @@ a:hover {
 	text-decoration: none;
 }
 
-button:focus a span {
-	color: var(--point-color);
-}
-
 .button-circle {
 	position: relative;
+	display: inline-block;
 	width: 140px;
 	height: 50px;
 	background: var(--bg-color);
 	padding: 0;
 	border: 1px solid var(--point-color);
+	text-align: center;
 }
-.button-circle a {
+.button-circle {
 	font-family: var(--montserrat);
 	font-weight: var(--weight-medium);
 }
-.button-circle a span {
+.button-circle span {
 	color: var(--font-color);
 	transition: 400ms ease-in-out;
 }
-.button-circle:hover a span {
+.button-circle:focus span {
+	color: var(--point-color);
+}
+.button-circle:hover span {
 	color: var(--header-color);
 }
-.button-circle a .button-bg {
+.button-circle .button-bg {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -196,18 +196,18 @@ button:focus a span {
 	transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
 }
 
-.button-circle:hover a .button-bg {
+.button-circle:hover .button-bg {
 	transform: scale3d(1.2, 1.2, 1);
 }
 
-.button-circle a .button-bg::before,
-.button-circle a .button-bg::after {
+.button-circle .button-bg::before,
+.button-circle .button-bg::after {
 	content: '';
 	position: absolute;
 	background: var(--point-color);
 }
 
-.button-circle a .button-bg::before {
+.button-circle .button-bg::before {
 	width: 110%;
 	height: 0;
 	padding-bottom: 110%;
@@ -217,12 +217,12 @@ button:focus a span {
 	transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1);
 }
 
-.button-circle:hover a .button-bg::before {
+.button-circle:hover .button-bg::before {
 	transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
 	transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1);
 }
 
-.button-circle a .button-bg::after {
+.button-circle .button-bg::after {
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -231,13 +231,13 @@ button:focus a span {
 	transition: opacity 0.3s;
 }
 
-.button-circle a:hover .button-bg::after {
+.button-circle:hover .button-bg::after {
 	opacity: 1;
 	transition-duration: 0.01s;
 	transition-delay: 0.3s;
 }
 
-.button-circle a span {
+.button-circle span {
 	display: inline-block;
 	width: 100%;
 	height: 100%;
