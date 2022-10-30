@@ -1,1157 +1,1521 @@
 <!DOCTYPE html>
 <html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Portfolio" />
+		<meta property="og:title" content="Jo jungwoo Portfolio" />
+		<meta
+			property="og:description"
+			content="반응형사이즈로 제작한 포트폴리오 앱입니다."
+		/>
+		<meta property="og:image" content="./images/seo.png" />
+		<meta
+			property="og:url"
+			content="https://everydayho-portfolio.netlify.app/"
+		/>
+		<meta property="twitter:card" content="summary" />
+		<meta property="twitter:site" content="Portfolio" />
+		<meta property="twitter:title" content="Jo jungwoo Portfolio" />
+		<meta
+			property="twitter:description"
+			content="반응형사이즈로 제작한 포트폴리오 앱입니다."
+		/>
+		<meta property="twitter:image" content="./images/seo.png" />
+		<meta
+			property="twitter:url"
+			content="https://everydayho-portfolio.netlify.app/"
+		/>
+		<link rel="icon" href="./images/favicon.ico" />
+		<title>Jo Jungwoo portfolio</title>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta property="og:type" content="website">
-	<meta property="og:site_name" content="Portfolio">
-	<meta property="og:title" content="Jo jungwoo Portfolio">
-	<meta property="og:description" content="반응형사이즈로 제작한 포트폴리오 앱입니다.">
-	<meta property="og:image" content="./images/seo.png">
-	<meta property="og:url" content="https://everydayho-portfolio.netlify.app/">
-	<meta property="twitter:card" content="summary">
-	<meta property="twitter:site" content="Portfolio">
-	<meta property="twitter:title" content="Jo jungwoo Portfolio">
-	<meta property="twitter:description" content="반응형사이즈로 제작한 포트폴리오 앱입니다.">
-	<meta property="twitter:image" content="./images/seo.png">
-	<meta property="twitter:url" content="https://everydayho-portfolio.netlify.app/">
-	<link rel="icon" href="./images/favicon.ico">
-	<title>Jo Jungwoo portfolio</title>
+		<!-- themify-icon -->
+		<link rel="stylesheet" href="./css/themify-icons.css" />
+		<!-- bootstrap css -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+		/>
 
-	<!-- themify-icon -->
-	<link rel="stylesheet" href="./css/themify-icons.css">
-	<!-- bootstrap css -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+		<!-- scroll smooth -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+		/>
+		<!-- animate css -->
+		<link rel="stylesheet" href="./css/animate.css" />
+		<!-- magnific-popup css -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+		/>
+		<!-- cSS -->
+		<link rel="stylesheet" href="./css/main.css" />
+		<!-- responsive css -->
+		<link rel="stylesheet" href="./css/responsive.css" />
+		<!-- jQuery JS -->
+		<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<!-- lettering js -->
+		<script src="./js/jquery.lettering.js"></script>
+		<!-- textillate -->
+		<script src="./js/jquery.textillate.js"></script>
+		<!-- smooth scroll -->
+		<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+		<!-- jarallax -->
+		<script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
+		<!-- gsap -->
+		<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+		<!-- isotope -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+		<!-- magnific-popup js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+		<!-- gallery js -->
+		<script src="./js/gallery.js"></script>
+		<!-- JS -->
+		<script defer src="./js/main.js"></script>
+	</head>
 
-	<!-- scroll smooth -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-	<!-- animate css -->
-	<link rel="stylesheet" href="./css/animate.css">
-	<!-- magnific-popup css -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-	<!-- cSS -->
-	<link rel="stylesheet" href="./css/main.css">
-	<!-- responsive css -->
-	<link rel="stylesheet" href="./css/responsive.css">
-	<!-- jQuery JS -->
-	<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<!-- lettering js -->
-	<script src="./js/jquery.lettering.js"></script>
-	<!-- textillate -->
-	<script src="./js/jquery.textillate.js"></script>
-	<!-- smooth scroll -->
-	<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
-	<!-- jarallax -->
-	<script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
-	<!-- gsap -->
-	<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
-	<!-- isotope -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-	<!-- magnific-popup js -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-	<!-- gallery js -->
-	<script src="./js/gallery.js"></script>
-	<!-- JS -->
-	<script defer src="./js/main.js"></script>
-</head>
-
-<body>
-	<div id="cursor">
-		<div class="cursor__circle"></div>
-	</div>
-	<header class="nav-wrap">
-		<div class="desc-nav">
-			<h1>
-				<a href="#home" class="logo" data-cursor-class="arrow"> wajo </a>
-			</h1>
-			<nav>
-				<ul>
-					<li>
-						<a href="#home" class="underline_from_left" data-cursor-class="arrow">Home</a>
-					</li>
-					<li>
-						<a href="#about" class="underline_from_left" data-cursor-class="arrow">About Me</a>
-					</li>
-					<li>
-						<a href="#whatido" class="underline_from_left" data-cursor-class="arrow">What I Do</a>
-					</li>
-					<li>
-						<a href="#skills" class="underline_from_left" data-cursor-class="arrow">Skills</a>
-					</li>
-					<li>
-						<a href="#portfolio" class="underline_from_left" data-cursor-class="arrow">Portfolio</a>
-					</li>
-					<li>
-						<a href="#contact" class="underline_from_left" data-cursor-class="arrow">Contact</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="icon-box">
-				<a href="https://github.com/everydayHo" target="_blank" data-cursor-class="arrow">
-					<svg height="20.5" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="20" data-view-component="true"
-						class="octicon octicon-mark-github v-align-middle">
-						<path fill-rule="evenodd"
-							d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
-						</path>
-					</svg>
-				</a>
-				<a href="https://www.instagram.com/untitled_blank_" target="_blank" class="ti-instagram"
-					data-cursor-class="arrow">
-				</a>
-				<a href="mailto:jungwoopage@gmail.com" target="_blank" class="ti-comments" data-cursor-class="arrow">
-				</a>
-			</div>
+	<body>
+		<div id="cursor">
+			<div class="cursor__circle"></div>
 		</div>
-	</header>
-
-	<!-- mobile nav -->
-	<div class="mobile-header">
-		<div class="container">
-			<div class="row mobile-wrap">
-				<h1 class="col-8 col-sm-8 col-md-2">
-					<a href="#" class="logo" data-cursor-class="arrow"> wajo </a>
+		<header class="nav-wrap">
+			<div class="desc-nav">
+				<h1>
+					<a href="#home" class="logo" data-cursor-class="arrow"> wajo </a>
 				</h1>
-				<!-- tablet menu -->
-				<nav class="col-sm-10 col-md-10 nav-menu">
+				<nav>
 					<ul>
 						<li>
-							<a href="#home" class="underline_from_left" data-cursor-class="arrow">Home</a>
+							<a
+								href="#home"
+								class="underline_from_left"
+								data-cursor-class="arrow"
+								>Home</a
+							>
 						</li>
 						<li>
-							<a href="#about" class="underline_from_left" data-cursor-class="arrow">About Me</a>
+							<a
+								href="#about"
+								class="underline_from_left"
+								data-cursor-class="arrow"
+								>About Me</a
+							>
 						</li>
 						<li>
-							<a href="#whatido" class="underline_from_left" data-cursor-class="arrow">What I Do</a>
+							<a
+								href="#whatido"
+								class="underline_from_left"
+								data-cursor-class="arrow"
+								>What I Do</a
+							>
 						</li>
 						<li>
-							<a href="#skills" class="underline_from_left" data-cursor-class="arrow">Skills</a>
+							<a
+								href="#skills"
+								class="underline_from_left"
+								data-cursor-class="arrow"
+								>Skills</a
+							>
 						</li>
 						<li>
-							<a href="#portfolio" class="underline_from_left" data-cursor-class="arrow">Portfolio</a>
+							<a
+								href="#portfolio"
+								class="underline_from_left"
+								data-cursor-class="arrow"
+								>Portfolio</a
+							>
 						</li>
 						<li>
-							<a href="#contact" class="underline_from_left" data-cursor-class="arrow">Contact</a>
+							<a
+								href="#contact"
+								class="underline_from_left"
+								data-cursor-class="arrow"
+								>Contact</a
+							>
 						</li>
 					</ul>
 				</nav>
-				<!-- mobile menu -->
-				<a href="#" class="col-4 col-sm-4 hamburger-button">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</a>
-				<div class="overlay-wrap">
-					<div class="overlay">
-						<nav class="mobile-menu">
-							<ul>
-								<li>
-									<a href="#home" class="underline_from_left" data-cursor-class="arrow">Home</a>
-								</li>
-								<li>
-									<a href="#about" class="underline_from_left" data-cursor-class="arrow">About Me</a>
-								</li>
-								<li>
-									<a href="#whatido" class="underline_from_left" data-cursor-class="arrow">What I Do</a>
-								</li>
-								<li>
-									<a href="#skills" class="underline_from_left" data-cursor-class="arrow">Skills</a>
-								</li>
-								<li>
-									<a href="#portfolio" class="underline_from_left" data-cursor-class="arrow">Portfolio</a>
-								</li>
-								<li>
-									<a href="#contact" class="underline_from_left" data-cursor-class="arrow">Contact</a>
-								</li>
-							</ul>
-						</nav>
-						<div class="icon-box mobile-icon-box">
-							<a href="https://github.com/everydayHo" target="_blank" data-cursor-class="arrow">
-								<svg height="20.5" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="20"
-									data-view-component="true" class="octicon octicon-mark-github v-align-middle">
-									<path fill-rule="evenodd"
-										d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
-									</path>
-								</svg>
-							</a>
-							<a href="https://www.instagram.com/untitled_blank_" target="_blank" class="ti-instagram"
-								data-cursor-class="arrow">
-							</a>
-							<a href="mailto:jungwoopage@gmail.com" target="_blank" class="ti-comments" data-cursor-class="arrow">
-							</a>
+				<div class="icon-box">
+					<a
+						href="https://github.com/everydayHo"
+						target="_blank"
+						data-cursor-class="arrow"
+					>
+						<svg
+							height="20.5"
+							aria-hidden="true"
+							viewBox="0 0 16 16"
+							version="1.1"
+							width="20"
+							data-view-component="true"
+							class="octicon octicon-mark-github v-align-middle"
+						>
+							<path
+								fill-rule="evenodd"
+								d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+							></path>
+						</svg>
+					</a>
+					<a
+						href="https://www.instagram.com/untitled_blank_"
+						target="_blank"
+						class="ti-instagram"
+						data-cursor-class="arrow"
+					>
+					</a>
+					<a
+						href="mailto:jungwoopage@gmail.com"
+						target="_blank"
+						class="ti-comments"
+						data-cursor-class="arrow"
+					>
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<!-- mobile nav -->
+		<div class="mobile-header">
+			<div class="container">
+				<div class="row mobile-wrap">
+					<h1 class="col-8 col-sm-8 col-md-2">
+						<a href="#" class="logo" data-cursor-class="arrow"> wajo </a>
+					</h1>
+					<!-- tablet menu -->
+					<nav class="col-sm-10 col-md-10 nav-menu">
+						<ul>
+							<li>
+								<a
+									href="#home"
+									class="underline_from_left"
+									data-cursor-class="arrow"
+									>Home</a
+								>
+							</li>
+							<li>
+								<a
+									href="#about"
+									class="underline_from_left"
+									data-cursor-class="arrow"
+									>About Me</a
+								>
+							</li>
+							<li>
+								<a
+									href="#whatido"
+									class="underline_from_left"
+									data-cursor-class="arrow"
+									>What I Do</a
+								>
+							</li>
+							<li>
+								<a
+									href="#skills"
+									class="underline_from_left"
+									data-cursor-class="arrow"
+									>Skills</a
+								>
+							</li>
+							<li>
+								<a
+									href="#portfolio"
+									class="underline_from_left"
+									data-cursor-class="arrow"
+									>Portfolio</a
+								>
+							</li>
+							<li>
+								<a
+									href="#contact"
+									class="underline_from_left"
+									data-cursor-class="arrow"
+									>Contact</a
+								>
+							</li>
+						</ul>
+					</nav>
+					<!-- mobile menu -->
+					<a href="#" class="col-4 col-sm-4 hamburger-button">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+					<div class="overlay-wrap">
+						<div class="overlay">
+							<nav class="mobile-menu">
+								<ul>
+									<li>
+										<a
+											href="#home"
+											class="underline_from_left"
+											data-cursor-class="arrow"
+											>Home</a
+										>
+									</li>
+									<li>
+										<a
+											href="#about"
+											class="underline_from_left"
+											data-cursor-class="arrow"
+											>About Me</a
+										>
+									</li>
+									<li>
+										<a
+											href="#whatido"
+											class="underline_from_left"
+											data-cursor-class="arrow"
+											>What I Do</a
+										>
+									</li>
+									<li>
+										<a
+											href="#skills"
+											class="underline_from_left"
+											data-cursor-class="arrow"
+											>Skills</a
+										>
+									</li>
+									<li>
+										<a
+											href="#portfolio"
+											class="underline_from_left"
+											data-cursor-class="arrow"
+											>Portfolio</a
+										>
+									</li>
+									<li>
+										<a
+											href="#contact"
+											class="underline_from_left"
+											data-cursor-class="arrow"
+											>Contact</a
+										>
+									</li>
+								</ul>
+							</nav>
+							<div class="icon-box mobile-icon-box">
+								<a
+									href="https://github.com/everydayHo"
+									target="_blank"
+									data-cursor-class="arrow"
+								>
+									<svg
+										height="20.5"
+										aria-hidden="true"
+										viewBox="0 0 16 16"
+										version="1.1"
+										width="20"
+										data-view-component="true"
+										class="octicon octicon-mark-github v-align-middle"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+										></path>
+									</svg>
+								</a>
+								<a
+									href="https://www.instagram.com/untitled_blank_"
+									target="_blank"
+									class="ti-instagram"
+									data-cursor-class="arrow"
+								>
+								</a>
+								<a
+									href="mailto:jungwoopage@gmail.com"
+									target="_blank"
+									class="ti-comments"
+									data-cursor-class="arrow"
+								>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<!-- main -->
-	<main class="sec-p" data-scroll-container>
-		<section id="home">
-			<div class="container">
-				<div class="row home-wrap">
-					<div class="col-12 col-sm-12 col-md-8 col-lg-8 home-text">
-						<h2>
-							<svg class="text-line on">
-								<text style="font-family: 'Poppins', sans-serif" x="0" y="90" fill="none">
-									JO JUNG WOO
-								</text>
-							</svg>
-						</h2>
-						<h3 class="tlt">I’M WEB PUBLISHER</h3>
-						<h4>CREATE WEB PORTFOLIO</h4>
-						<p>
-							안녕하세요. 저의 포트폴리오에 오신 것을 환영합니다. <br>
-							프론트엔드 개발 공부와 웹 퍼블리셔 과정을 통해 준비한 결과물을
-							보실 수 있습니다. :)
-						</p>
-					</div>
-					<div class="col-12 col-sm-12 col-md-4 col-lg-4 home-img">
-						<svg viewBox="0 0 450 450" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
-							xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg2">
-							<clipPath id="shape">
-								<path d="M2011,156.4V92.28C1552,189.23,1380,131,813,66.8S0,177.59,0,177.59H2011Z">
-									<animate attributeName="d" dur="7000ms" repeatCount="indefinite" values="M401,351.5Q316,453,198,413Q80,373,84.5,253Q89,133,194,115.5Q299,98,392.5,174Q486,250,401,351.5Z;
+		<!-- main -->
+		<main class="sec-p" data-scroll-container>
+			<section id="home">
+				<div class="container">
+					<div class="row home-wrap">
+						<div class="col-12 col-sm-12 col-md-8 col-lg-8 home-text">
+							<h2>
+								<svg class="text-line on">
+									<text
+										style="font-family: 'Poppins', sans-serif"
+										x="0"
+										y="90"
+										fill="none"
+									>
+										JO JUNG WOO
+									</text>
+								</svg>
+							</h2>
+							<h3 class="tlt">I’M WEB PUBLISHER</h3>
+							<h4>CREATE WEB PORTFOLIO</h4>
+							<p>
+								안녕하세요. 저의 포트폴리오에 오신 것을 환영합니다. <br />
+								프론트엔드 개발 공부와 웹 퍼블리셔 과정을 통해 준비한 결과물을
+								보실 수 있습니다. :)
+							</p>
+						</div>
+						<div class="col-12 col-sm-12 col-md-4 col-lg-4 home-img">
+							<svg
+								viewBox="0 0 450 450"
+								preserveAspectRatio="none"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								width="100%"
+								id="blobSvg2"
+							>
+								<clipPath id="shape">
+									<path
+										d="M401,351.5Q316,453,198,413Q80,373,84.5,253Q89,133,194,115.5Q299,98,392.5,174Q486,250,401,351.5Z"
+									>
+										<animate
+											attributeName="d"
+											dur="7000ms"
+											repeatCount="indefinite"
+											values="M401,351.5Q316,453,198,413Q80,373,84.5,253Q89,133,194,115.5Q299,98,392.5,174Q486,250,401,351.5Z;
 					M392,336Q306,422,197.5,394.5Q89,367,84.5,247Q80,127,194,100Q308,73,393,161.5Q478,250,392,336Z;
 					M380.5,360Q321,470,184.5,433.5Q48,397,71,266.5Q94,136,208,82Q322,28,381,139Q440,250,380.5,360Z;
 					M401,351.5Q316,453,198,413Q80,373,84.5,253Q89,133,194,115.5Q299,98,392.5,174Q486,250,401,351.5Z
-					"></animate>
-								</path>
-							</clipPath>
-						</svg>
-						<div class="img-box"></div>
-					</div>
-					<!-- mouse scroll -->
-					<div class="field">
-						<div class="mouse" data-cursor-class="arrow"></div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="about">
-			<div class="container">
-				<div class="row about-wrap">
-					<div class="col-12 col-md-7 col-lg-7 about-text">
-						<h2 class="title" data-scroll data-scroll-speed="1">About Me</h2>
-						<h3 data-scroll data-scroll-speed="1">attraction</h3>
-						<h4 data-scroll data-scroll-speed="2">
-							사용성있는 웹페이지를 만들기 위해 <br>
-							노력하는 웹퍼블리셔 조정우입니다.
-						</h4>
-						<div class="about-text-container">
-							<p data-scroll data-scroll-speed="1">
-								약속과 신뢰를 중요하게 여기며, 꼼꼼한 성격과 높은 집중력으로
-								작업물의 완성도를 높이는데 자신있는 노력형 웹퍼블리셔입니다.
-							</p>
-							<p data-scroll data-scroll-speed="1">
-								매일매일 빠르게 발전하는 기술들을 익히는 걸 즐겨하며, 잘
-								해결되지 않는 문제를 해결할 때 즐거움이 코딩을 하는 가장
-								매력적인 부분이라고 생각합니다.
-							</p>
-							<p data-scroll data-scroll-speed="1">
-								제가 맡은 부분의 일은 책임지고 최선의 결과를 내도록
-								하겠습니다.
-							</p>
+					"
+										></animate>
+									</path>
+								</clipPath>
+							</svg>
+							<div class="img-box"></div>
 						</div>
-					</div>
-					<div class="col-12 col-md-5 col-lg-5 about-img">
-						<img src="./images/lg/about-img1.png" alt="about img">
-					</div>
-				</div>
-			</div>
-			<div class="box-container">
-				<div class="jarallax">
-					<div class="container">
-						<div class="row">
-							<img src="./images/parallax-real-1.png" alt="parallax img" class="jarallax-img">
-
-							<div class="about-content">
-								<div class="col-sm-12 col-md-6 col-lg-6 left-box">
-									<h4 class="subtitle">Experience</h4>
-									<div class="text-container">
-										<h5>
-											수입 빈티지 샵<br>
-											온라인, 오프라인 매장 운영
-										</h5>
-										<p>2008. 05 ~2015. 07</p>
-									</div>
-									<div class="text-container">
-										<h5>
-											(주) SPC 삼립 생산팀 <br>
-											오퍼레이터 근무
-										</h5>
-										<p>2018. 07 ~2021. 11</p>
-									</div>
-								</div>
-								<div class="col-sm-12 col-md-6 col-lg-6 right-box">
-									<h4 class="subtitle">Education</h4>
-									<div class="text-container">
-										<h5>부흥고등학교 이공계 졸업</h5>
-										<p>1998. 03 ~2001. 03</p>
-									</div>
-									<div class="text-container">
-										<h5>동서대학교 국제관계학부 중퇴</h5>
-										<p>2002. 03 ~2004. 07</p>
-									</div>
-									<div class="text-container">
-										<h5>라인 아트 학원 웹퍼블리셔 과정 수료</h5>
-										<p>2022. 02 ~2022. 09</p>
-									</div>
-								</div>
-							</div>
+						<!-- mouse scroll -->
+						<div class="field">
+							<div class="mouse" data-cursor-class="arrow"></div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<section id="whatido" class="scroll-container">
-			<div class="ido-text">
-				<h2 class="title">What I do</h2>
-				<h3>My service</h3>
-			</div>
-			<div class="container-fluid">
-				<div class="row">
-					<div id="sectionPin" class="col-sm-12">
-						<div class="row">
-							<div class="pin-wrap">
-								<div class="col-sm-6 service-card">
-									<img src="./images/lg/photo-box01.png" alt="service img1">
-									<h2>DESIGN</h2>
-									<p>
-										포토샵, 일러스트레이터, XD, Figma등 디자인<br>
-										프로그램으로 기본적인 템플릿 작업이나 협업이 가능합니다.
-									</p>
-								</div>
-								<div class="col-sm-6 service-card">
-									<img src="./images/lg/photo-box02.png" alt="service img2">
-									<h2>HTML</h2>
-									<p>
-										웹표준과 웹 접근성을 준수하여 HTML5에서<br>
-										권장하는 마크업 방식과 시멘틱태그를 이용해서<br>
-										레이아웃을 설계합니다.
-									</p>
-								</div>
-								<div class="col-sm-6 service-card">
-									<img src="./images/lg/photo-box03.png" alt="service img3">
-									<h2>CSS</h2>
-									<p>
-										크로싱브라우징을 위해 안정적인 css속성을<br>
-										사용하여 HTML Element를 배치하고 디자인<br>
-										합니다. Flex, grid를 활용하여 구조를 디자인<br>
-										할 수있습니다. 보다 효과적인 작업을 위해<br>
-										SCSS문법도 익혔습니다.
-									</p>
-								</div>
-								<div class="col-sm-6 service-card">
-									<img src="./images/lg/photo-box04.png" alt="service img4">
-									<h2>JAVASCRIPT</h2>
-									<p>
-										Node들을 동적인 구현이 가능하도록 필수적인<br>
-										자바스크립트 문법과 브라우저 API와 ajax를<br>
-										통해 비동기로 서버와 통신하는 법을 익히고 있습니다.
-									</p>
-								</div>
-								<div class="col-sm-6 service-card">
-									<img src="./images/lg/photo-box05.png" alt="service img5">
-									<h2>JQUERY</h2>
-									<p>
-										자바스크립트보다 편한 작업을 위해<br>
-										Jquery라이브러리를 통한 손쉬운 구현 방식을<br>
-										익혔습니다. 작업에 필요한 라이브러리들을<br>
-										많이 익힐려고 노력했습니다.
-									</p>
-								</div>
-								<div class="col-sm-6 service-card">
-									<img src="./images/lg/photo-box06.png" alt="service img6">
-									<h2>RESPONSIVE WEB</h2>
-									<p>
-										크로스 브라우징을 위해 미디어 쿼리를 이용하여<br>
-										반응형 웹제작이 가능합니다.<br>
-										Bootstrap, tailwind등을 통해 보다 빠른<br>
-										작업을 할 수있는 기술을 익혔습니다.
-									</p>
-								</div>
+			</section>
+			<section id="about">
+				<div class="container">
+					<div class="row about-wrap">
+						<div class="col-12 col-md-7 col-lg-7 about-text">
+							<h2 class="title" data-scroll data-scroll-speed="1">About Me</h2>
+							<h3 data-scroll data-scroll-speed="1">attraction</h3>
+							<h4 data-scroll data-scroll-speed="2">
+								사용성있는 웹페이지를 만들기 위해 <br />
+								노력하는 웹퍼블리셔 조정우입니다.
+							</h4>
+							<div class="about-text-container">
+								<p data-scroll data-scroll-speed="1">
+									약속과 신뢰를 중요하게 여기며, 꼼꼼한 성격과 높은 집중력으로
+									작업물의 완성도를 높이는데 자신있는 노력형 웹퍼블리셔입니다.
+								</p>
+								<p data-scroll data-scroll-speed="1">
+									매일매일 빠르게 발전하는 기술들을 익히는 걸 즐겨하며, 잘
+									해결되지 않는 문제를 해결할 때 즐거움이 코딩을 하는 가장
+									매력적인 부분이라고 생각합니다.
+								</p>
+								<p data-scroll data-scroll-speed="1">
+									제가 맡은 부분의 일은 책임지고 최선의 결과를 내도록
+									하겠습니다.
+								</p>
 							</div>
+						</div>
+						<div class="col-12 col-md-5 col-lg-5 about-img">
+							<img src="./images/lg/about-img1.png" alt="about img" />
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<section id="skills">
-			<div class="container">
-				<div class="row skill-wrap">
-					<h2 class="title" data-scroll data-scroll-speed="1">Skills</h2>
-					<h3 data-scroll data-scroll-speed="1">Works skill</h3>
-					<ul>
-						<li class="col-sm-6 col-md-3 work-card" data-scroll data-scroll-speed="2" data-scroll-delay="0.18">
-							<div class="spinner-box">
-								<div class="leo-border-1">
-									<div class="leo-core-1"></div>
-								</div>
-								<div class="leo-border-2">
-									<div class="leo-core-2"></div>
-								</div>
-							</div>
-							<h2>DESIGN</h2>
-							<h3 class="counter" data-number="80">80%</h3>
-						</li>
-						<li class="col-sm-6 col-md-3 work-card" data-scroll data-scroll-speed="2" data-scroll-delay="0.12">
-							<div class="spinner-box">
-								<div class="blue-orbit leo"></div>
-								<div class="green-orbit leo"></div>
-								<div class="red-orbit leo"></div>
-								<div class="white-orbit w1 leo"></div>
-								<div class="white-orbit w2 leo"></div>
-								<div class="white-orbit w3 leo"></div>
-							</div>
-							<h2>JAVASCRIPT</h2>
-							<h3 class="counter" data-number="83">83%</h3>
-						</li>
-						<li class="col-sm-6 col-md-3 work-card" data-scroll data-scroll-speed="2" data-scroll-delay="0.06">
-							<div class="spinner-box">
-								<div class="configure-border-1">
-									<div class="configure-core"></div>
-								</div>
-								<div class="configure-border-2">
-									<div class="configure-core"></div>
-								</div>
-							</div>
-							<h2>TYPESCRIPT</h2>
-							<h3 class="counter" data-number="65">65%</h3>
-						</li>
-						<li class="col-sm-6 col-md-3 work-card" data-scroll data-scroll-speed="2" data-scroll-delay="0.04">
-							<div class="spinner-box">
-								<div class="solar-system">
-									<div class="earth-orbit orbit">
-										<div class="planet earth"></div>
-										<div class="venus-orbit orbit">
-											<div class="planet venus"></div>
-											<div class="mercury-orbit orbit">
-												<div class="planet mercury"></div>
-												<div class="sun"></div>
-											</div>
+				<div class="box-container">
+					<div class="jarallax">
+						<div class="container">
+							<div class="row">
+								<img
+									src="./images/parallax-real-1.png"
+									alt="parallax img"
+									class="jarallax-img"
+								/>
+								<div class="about-content">
+									<div class="col-sm-12 col-md-6 col-lg-6 left-box">
+										<h4 class="subtitle">Experience</h4>
+										<div class="text-container">
+											<h5>
+												수입 빈티지 샵<br />
+												온라인, 오프라인 매장 운영
+											</h5>
+											<p>2008. 05 ~2015. 07</p>
+										</div>
+										<div class="text-container">
+											<h5>
+												(주) SPC 삼립 생산팀 <br />
+												오퍼레이터 근무
+											</h5>
+											<p>2018. 07 ~2021. 11</p>
+										</div>
+									</div>
+									<div class="col-sm-12 col-md-6 col-lg-6 right-box">
+										<h4 class="subtitle">Education</h4>
+										<div class="text-container">
+											<h5>부흥고등학교 이공계 졸업</h5>
+											<p>1998. 03 ~2001. 03</p>
+										</div>
+										<div class="text-container">
+											<h5>동서대학교 국제관계학부 중퇴</h5>
+											<p>2002. 03 ~2004. 07</p>
+										</div>
+										<div class="text-container">
+											<h5>라인 아트 학원 웹퍼블리셔 과정 수료</h5>
+											<p>2022. 02 ~2022. 09</p>
 										</div>
 									</div>
 								</div>
 							</div>
-							<h2>REACT & VUE</h2>
-							<h3 class="counter" data-number="67">67%</h3>
-						</li>
-					</ul>
+						</div>
+					</div>
 				</div>
-			</div>
-		</section>
-		<section id="portfolio">
-			<div class="container-fluid work-wrap">
-				<div class="row">
-					<div class="portfolio-text">
-						<h2 class="title">Portfolio</h2>
-						<h3>Recent work</h3>
+			</section>
+			<section id="whatido" class="scroll-container">
+				<div class="ido-text">
+					<h2 class="title">What I do</h2>
+					<h3>My service</h3>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div id="sectionPin" class="col-sm-12">
+							<div class="row">
+								<div class="pin-wrap">
+									<div class="col-sm-6 service-card">
+										<img src="./images/lg/photo-box01.png" alt="service img1" />
+										<h2>DESIGN</h2>
+										<p>
+											포토샵, 일러스트레이터, XD, Figma등 디자인<br />
+											프로그램으로 기본적인 템플릿 작업이나 협업이 가능합니다.
+										</p>
+									</div>
+									<div class="col-sm-6 service-card">
+										<img src="./images/lg/photo-box02.png" alt="service img2" />
+										<h2>HTML</h2>
+										<p>
+											웹표준과 웹 접근성을 준수하여 HTML5에서<br />
+											권장하는 마크업 방식과 시멘틱태그를 이용해서<br />
+											레이아웃을 설계합니다.
+										</p>
+									</div>
+									<div class="col-sm-6 service-card">
+										<img src="./images/lg/photo-box03.png" alt="service img3" />
+										<h2>CSS</h2>
+										<p>
+											크로싱브라우징을 위해 안정적인 css속성을<br />
+											사용하여 HTML Element를 배치하고 디자인<br />
+											합니다. Flex, grid를 활용하여 구조를 디자인<br />
+											할 수있습니다. 보다 효과적인 작업을 위해<br />
+											SCSS문법도 익혔습니다.
+										</p>
+									</div>
+									<div class="col-sm-6 service-card">
+										<img src="./images/lg/photo-box04.png" alt="service img4" />
+										<h2>JAVASCRIPT</h2>
+										<p>
+											Node들을 동적인 구현이 가능하도록 필수적인<br />
+											자바스크립트 문법과 브라우저 API와 ajax를<br />
+											통해 비동기로 서버와 통신하는 법을 익히고 있습니다.
+										</p>
+									</div>
+									<div class="col-sm-6 service-card">
+										<img src="./images/lg/photo-box05.png" alt="service img5" />
+										<h2>JQUERY</h2>
+										<p>
+											자바스크립트보다 편한 작업을 위해<br />
+											Jquery라이브러리를 통한 손쉬운 구현 방식을<br />
+											익혔습니다. 작업에 필요한 라이브러리들을<br />
+											많이 익힐려고 노력했습니다.
+										</p>
+									</div>
+									<div class="col-sm-6 service-card">
+										<img src="./images/lg/photo-box06.png" alt="service img6" />
+										<h2>RESPONSIVE WEB</h2>
+										<p>
+											크로스 브라우징을 위해 미디어 쿼리를 이용하여<br />
+											반응형 웹제작이 가능합니다.<br />
+											Bootstrap, tailwind등을 통해 보다 빠른<br />
+											작업을 할 수있는 기술을 익혔습니다.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-					<!-- g-menu -->
-					<div class="g-menu work-menu">
+				</div>
+			</section>
+			<section id="skills">
+				<div class="container">
+					<div class="row skill-wrap">
+						<h2 class="title" data-scroll data-scroll-speed="1">Skills</h2>
+						<h3 data-scroll data-scroll-speed="1">Works skill</h3>
 						<ul>
-							<li>
-								<a href="#" id="m1" class="underline_from_left active" data-cursor-class="arrow">ALL</a>
+							<li
+								class="col-sm-6 col-md-3 work-card"
+								data-scroll
+								data-scroll-speed="2"
+								data-scroll-delay="0.18"
+							>
+								<div class="spinner-box">
+									<div class="leo-border-1">
+										<div class="leo-core-1"></div>
+									</div>
+									<div class="leo-border-2">
+										<div class="leo-core-2"></div>
+									</div>
+								</div>
+								<h2>DESIGN</h2>
+								<h3 class="counter" data-number="80">80%</h3>
 							</li>
-							<li>
-								<a href="#" id="m2" class="underline_from_left" data-cursor-class="arrow">WEB</a>
+							<li
+								class="col-sm-6 col-md-3 work-card"
+								data-scroll
+								data-scroll-speed="2"
+								data-scroll-delay="0.12"
+							>
+								<div class="spinner-box">
+									<div class="blue-orbit leo"></div>
+									<div class="green-orbit leo"></div>
+									<div class="red-orbit leo"></div>
+									<div class="white-orbit w1 leo"></div>
+									<div class="white-orbit w2 leo"></div>
+									<div class="white-orbit w3 leo"></div>
+								</div>
+								<h2>JAVASCRIPT</h2>
+								<h3 class="counter" data-number="83">83%</h3>
 							</li>
-							<li>
-								<a href="#" id="m3" class="underline_from_left" data-cursor-class="arrow">RWD</a>
+							<li
+								class="col-sm-6 col-md-3 work-card"
+								data-scroll
+								data-scroll-speed="2"
+								data-scroll-delay="0.06"
+							>
+								<div class="spinner-box">
+									<div class="configure-border-1">
+										<div class="configure-core"></div>
+									</div>
+									<div class="configure-border-2">
+										<div class="configure-core"></div>
+									</div>
+								</div>
+								<h2>TYPESCRIPT</h2>
+								<h3 class="counter" data-number="65">65%</h3>
 							</li>
-							<li>
-								<a href="#" id="m4" class="underline_from_left" data-cursor-class="arrow">APP</a>
-							</li>
-						</ul>
-					</div>
-					<!-- gallery -->
-					<div class="grid work-container" id="gallery">
-						<ul>
-							<li class="grid-item g2">
-								<figure class="project-card">
-									<img src="./images/lg/work-card1.png" alt="work photo1">
-									<figcaption>
-										<h2>Folex</h2>
-										<a href="#popup1" class="button-circle" data-cursor-class="arrow">
-											<div class="button-bg"></div>
-											<span>VIEW</span>
-										</a>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="grid-item g1">
-								<figure class="project-card">
-									<img src="./images/lg/work-card2.png" alt="work photo11">
-									<figcaption>
-										<h2>Starbucks Site</h2>
-										<a href="#popup11" class="button-circle" data-cursor-class="arrow">
-											<div class="button-bg"></div>
-											<span>VIEW</span>
-										</a>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="grid-item g2">
-								<figure class="project-card">
-									<img src="./images/lg/work-card3.png" alt="work photo13">
-									<figcaption>
-										<h2>Expire</h2>
-										<a href="#popup13" class="button-circle" data-cursor-class="arrow">
-											<div class="button-bg"></div>
-											<span>VIEW</span>
-										</a>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="grid-item g1">
-								<figure class="project-card">
-									<img src="./images/lg/work-card4.png" alt="work photo12">
-									<figcaption>
-										<h2>OMDB API MOVIE SITE</h2>
-										<a href="#popup12" class="button-circle" data-cursor-class="arrow">
-											<div class="button-bg"></div>
-											<span>VIEW</span>
-										</a>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="grid-item g3">
-								<figure class="project-card">
-									<img src="./images/lg/work-card5.png" alt="work photo14">
-									<figcaption>
-										<h2>moblie shopping site</h2>
-										<a href="#popup14" class="button-circle" data-cursor-class="arrow">
-											<div class="button-bg"></div>
-											<span>VIEW</span>
-										</a>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="grid-item g3">
-								<figure class="project-card">
-									<img src="./images/lg/work-card6.png" alt="work photo7">
-									<figcaption>
-										<h2>Megabox</h2>
-										<a href="#popup7" class="button-circle" data-cursor-class="arrow">
-											<div class="button-bg"></div>
-											<span>VIEW</span>
-										</a>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="grid-item g1">
-								<figure class="project-card">
-									<img src="./images/lg/work-card7.png" alt="work photo3">
-									<figcaption>
-										<h2>Hyundai Motors</h2>
-										<a href="#popup3" class="button-circle" data-cursor-class="arrow">
-											<div class="button-bg"></div>
-											<span>VIEW</span>
-										</a>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="grid-item g1">
-								<figure class="project-card">
-									<img src="./images/lg/work-card8.png" alt="work photo15">
-									<figcaption>
-										<h2>shopy</h2>
-										<a href="#popup15" class="button-circle" data-cursor-class="arrow">
-											<div class="button-bg"></div>
-											<span>VIEW</span>
-										</a>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="grid-item g1">
-								<figure class="project-card">
-									<img src="./images/lg/work-card9.png" alt="work photo4">
-									<figcaption>
-										<h2>Samsung JBL</h2>
-										<a href="#popup4" class="button-circle" data-cursor-class="arrow">
-											<div class="button-bg"></div>
-											<span>VIEW</span>
-										</a>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="grid-item g2">
-								<figure class="project-card">
-									<img src="./images/lg/work-card10.png" alt="work photo5">
-									<figcaption>
-										<h2>Retina Web Design</h2>
-										<a href="#popup5" class="button-circle" data-cursor-class="arrow">
-											<div class="button-bg"></div>
-											<span>VIEW</span>
-										</a>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="grid-item g2">
-								<figure class="project-card">
-									<img src="./images/lg/work-card11.png" alt="work photo16">
-									<figcaption>
-										<h2>Waxom</h2>
-										<a href="#popup16" class="button-circle" data-cursor-class="arrow">
-											<div class="button-bg"></div>
-											<span>VIEW</span>
-										</a>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="grid-item g2">
-								<figure class="project-card">
-									<img src="./images/lg/work-card12.png" alt="work photo6">
-									<figcaption>
-										<h2>Alia Corns</h2>
-										<a href="#popup6" class="button-circle" data-cursor-class="arrow">
-											<div class="button-bg"></div>
-											<span>VIEW</span>
-										</a>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="grid-item g3">
-								<figure class="project-card">
-									<img src="./images/lg/work-card13.png" alt="work photo8">
-									<figcaption>
-										<h2>Web App project</h2>
-										<a href="#popup8" class="button-circle" data-cursor-class="arrow">
-											<div class="button-bg"></div>
-											<span>VIEW</span>
-										</a>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="grid-item g1">
-								<figure class="project-card">
-									<img src="./images/lg/work-card14.png" alt="work photo1">
-									<figcaption>
-										<h2>Phono</h2>
-										<a href="#popup9" class="button-circle" data-cursor-class="arrow">
-											<div class="button-bg"></div>
-											<span>VIEW</span>
-										</a>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="grid-item g3">
-								<figure class="project-card">
-									<img src="./images/lg/work-card15.png" alt="work photo10">
-									<figcaption>
-										<h2>Mobile portfolio</h2>
-										<a href="#popup10" class="button-circle" data-cursor-class="arrow">
-											<div class="button-bg"></div>
-											<span>VIEW</span>
-										</a>
-									</figcaption>
-								</figure>
+							<li
+								class="col-sm-6 col-md-3 work-card"
+								data-scroll
+								data-scroll-speed="2"
+								data-scroll-delay="0.04"
+							>
+								<div class="spinner-box">
+									<div class="solar-system">
+										<div class="earth-orbit orbit">
+											<div class="planet earth"></div>
+											<div class="venus-orbit orbit">
+												<div class="planet venus"></div>
+												<div class="mercury-orbit orbit">
+													<div class="planet mercury"></div>
+													<div class="sun"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<h2>REACT & VUE</h2>
+								<h3 class="counter" data-number="67">67%</h3>
 							</li>
 						</ul>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+			<section id="portfolio">
+				<div class="container-fluid work-wrap">
+					<div class="row">
+						<div class="portfolio-text">
+							<h2 class="title">Portfolio</h2>
+							<h3>Recent work</h3>
+						</div>
+						<!-- g-menu -->
+						<div class="g-menu work-menu">
+							<ul>
+								<li>
+									<a
+										href="#"
+										id="m1"
+										class="underline_from_left active"
+										data-cursor-class="arrow"
+										>ALL</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										id="m2"
+										class="underline_from_left"
+										data-cursor-class="arrow"
+										>WEB</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										id="m3"
+										class="underline_from_left"
+										data-cursor-class="arrow"
+										>RWD</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										id="m4"
+										class="underline_from_left"
+										data-cursor-class="arrow"
+										>APP</a
+									>
+								</li>
+							</ul>
+						</div>
+						<!-- gallery -->
+						<div class="grid work-container" id="gallery">
+							<ul>
+								<li class="grid-item g2">
+									<figure class="project-card">
+										<img src="./images/lg/work-card1.png" alt="work photo1" />
+										<figcaption>
+											<h2>Folex</h2>
+											<a
+												href="#popup1"
+												class="button-circle"
+												data-cursor-class="arrow"
+											>
+												<div class="button-bg"></div>
+												<span>VIEW</span>
+											</a>
+										</figcaption>
+									</figure>
+								</li>
+								<li class="grid-item g1">
+									<figure class="project-card">
+										<img src="./images/lg/work-card2.png" alt="work photo11" />
+										<figcaption>
+											<h2>Starbucks Site</h2>
+											<a
+												href="#popup11"
+												class="button-circle"
+												data-cursor-class="arrow"
+											>
+												<div class="button-bg"></div>
+												<span>VIEW</span>
+											</a>
+										</figcaption>
+									</figure>
+								</li>
+								<li class="grid-item g2">
+									<figure class="project-card">
+										<img src="./images/lg/work-card3.png" alt="work photo13" />
+										<figcaption>
+											<h2>Expire</h2>
+											<a
+												href="#popup13"
+												class="button-circle"
+												data-cursor-class="arrow"
+											>
+												<div class="button-bg"></div>
+												<span>VIEW</span>
+											</a>
+										</figcaption>
+									</figure>
+								</li>
+								<li class="grid-item g1">
+									<figure class="project-card">
+										<img src="./images/lg/work-card4.png" alt="work photo12" />
+										<figcaption>
+											<h2>OMDB API MOVIE SITE</h2>
+											<a
+												href="#popup12"
+												class="button-circle"
+												data-cursor-class="arrow"
+											>
+												<div class="button-bg"></div>
+												<span>VIEW</span>
+											</a>
+										</figcaption>
+									</figure>
+								</li>
+								<li class="grid-item g3">
+									<figure class="project-card">
+										<img src="./images/lg/work-card5.png" alt="work photo14" />
+										<figcaption>
+											<h2>moblie shopping site</h2>
+											<a
+												href="#popup14"
+												class="button-circle"
+												data-cursor-class="arrow"
+											>
+												<div class="button-bg"></div>
+												<span>VIEW</span>
+											</a>
+										</figcaption>
+									</figure>
+								</li>
+								<li class="grid-item g3">
+									<figure class="project-card">
+										<img src="./images/lg/work-card6.png" alt="work photo7" />
+										<figcaption>
+											<h2>Megabox</h2>
+											<a
+												href="#popup7"
+												class="button-circle"
+												data-cursor-class="arrow"
+											>
+												<div class="button-bg"></div>
+												<span>VIEW</span>
+											</a>
+										</figcaption>
+									</figure>
+								</li>
+								<li class="grid-item g1">
+									<figure class="project-card">
+										<img src="./images/lg/work-card7.png" alt="work photo3" />
+										<figcaption>
+											<h2>Hyundai Motors</h2>
+											<a
+												href="#popup3"
+												class="button-circle"
+												data-cursor-class="arrow"
+											>
+												<div class="button-bg"></div>
+												<span>VIEW</span>
+											</a>
+										</figcaption>
+									</figure>
+								</li>
+								<li class="grid-item g1">
+									<figure class="project-card">
+										<img src="./images/lg/work-card8.png" alt="work photo15" />
+										<figcaption>
+											<h2>shopy</h2>
+											<a
+												href="#popup15"
+												class="button-circle"
+												data-cursor-class="arrow"
+											>
+												<div class="button-bg"></div>
+												<span>VIEW</span>
+											</a>
+										</figcaption>
+									</figure>
+								</li>
+								<li class="grid-item g1">
+									<figure class="project-card">
+										<img src="./images/lg/work-card9.png" alt="work photo4" />
+										<figcaption>
+											<h2>Samsung JBL</h2>
+											<a
+												href="#popup4"
+												class="button-circle"
+												data-cursor-class="arrow"
+											>
+												<div class="button-bg"></div>
+												<span>VIEW</span>
+											</a>
+										</figcaption>
+									</figure>
+								</li>
+								<li class="grid-item g2">
+									<figure class="project-card">
+										<img src="./images/lg/work-card10.png" alt="work photo5" />
+										<figcaption>
+											<h2>Retina Web Design</h2>
+											<a
+												href="#popup5"
+												class="button-circle"
+												data-cursor-class="arrow"
+											>
+												<div class="button-bg"></div>
+												<span>VIEW</span>
+											</a>
+										</figcaption>
+									</figure>
+								</li>
+								<li class="grid-item g2">
+									<figure class="project-card">
+										<img src="./images/lg/work-card11.png" alt="work photo16" />
+										<figcaption>
+											<h2>Waxom</h2>
+											<a
+												href="#popup16"
+												class="button-circle"
+												data-cursor-class="arrow"
+											>
+												<div class="button-bg"></div>
+												<span>VIEW</span>
+											</a>
+										</figcaption>
+									</figure>
+								</li>
+								<li class="grid-item g2">
+									<figure class="project-card">
+										<img src="./images/lg/work-card12.png" alt="work photo6" />
+										<figcaption>
+											<h2>Alia Corns</h2>
+											<a
+												href="#popup6"
+												class="button-circle"
+												data-cursor-class="arrow"
+											>
+												<div class="button-bg"></div>
+												<span>VIEW</span>
+											</a>
+										</figcaption>
+									</figure>
+								</li>
+								<li class="grid-item g3">
+									<figure class="project-card">
+										<img src="./images/lg/work-card13.png" alt="work photo8" />
+										<figcaption>
+											<h2>Web App project</h2>
+											<a
+												href="#popup8"
+												class="button-circle"
+												data-cursor-class="arrow"
+											>
+												<div class="button-bg"></div>
+												<span>VIEW</span>
+											</a>
+										</figcaption>
+									</figure>
+								</li>
+								<li class="grid-item g1">
+									<figure class="project-card">
+										<img src="./images/lg/work-card14.png" alt="work photo1" />
+										<figcaption>
+											<h2>Phono</h2>
+											<a
+												href="#popup9"
+												class="button-circle"
+												data-cursor-class="arrow"
+											>
+												<div class="button-bg"></div>
+												<span>VIEW</span>
+											</a>
+										</figcaption>
+									</figure>
+								</li>
+								<li class="grid-item g3">
+									<figure class="project-card">
+										<img src="./images/lg/work-card15.png" alt="work photo10" />
+										<figcaption>
+											<h2>Mobile portfolio</h2>
+											<a
+												href="#popup10"
+												class="button-circle"
+												data-cursor-class="arrow"
+											>
+												<div class="button-bg"></div>
+												<span>VIEW</span>
+											</a>
+										</figcaption>
+									</figure>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
 
-		<section id="contact">
-			<div class="container contact-wrap">
+			<section id="contact">
+				<div class="container contact-wrap">
+					<div class="row">
+						<h2 class="title" data-scroll data-scroll-speed="1">Contact</h2>
+						<h3 data-scroll data-scroll-speed="1">Get in touch</h3>
+						<div class="contact-container">
+							<div
+								class="col-12 col-md-6 col-lg-6 contact-text"
+								data-scroll
+								data-scroll-speed="2"
+							>
+								<div class="con-text">
+									<h3>PHONE</h3>
+									<p>010-9858-1103</p>
+								</div>
+								<div class="con-text">
+									<h3>EMAIL</h3>
+									<p>jungwoopage@gmail.com</p>
+								</div>
+								<div class="con-text">
+									<h3>LIVE IN</h3>
+									<p>Gyeonggi-do Ansan-si</p>
+								</div>
+								<a
+									href="./images/resume.pdf"
+									class="button-circle"
+									download="이력서_조정우"
+								>
+									<div class="button-bg"></div>
+									<span>이력서 보기</span>
+								</a>
+							</div>
+							<div
+								class="col-12 col-md-6 col-lg-6 talk-container"
+								data-scroll
+								data-scroll-speed="2"
+							>
+								<h3>카카오톡 오픈 채팅하기</h3>
+								<img src="./images/lg/kakaotalk-img.png" alt="kakaotalk img" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- popup1 -->
+		<div id="popup1" class="white-popup mfp-hide">
+			<div class="container">
 				<div class="row">
-					<h2 class="title" data-scroll data-scroll-speed="1">Contact</h2>
-					<h3 data-scroll data-scroll-speed="1">Get in touch</h3>
-					<div class="contact-container">
-						<div class="col-12 col-md-6 col-lg-6 contact-text" data-scroll data-scroll-speed="2">
-							<div class="con-text">
-								<h3>PHONE</h3>
-								<p>010-9858-1103</p>
-							</div>
-							<div class="con-text">
-								<h3>EMAIL</h3>
-								<p>jungwoopage@gmail.com</p>
-							</div>
-							<div class="con-text">
-								<h3>LIVE IN</h3>
-								<p>Gyeonggi-do Ansan-si</p>
-							</div>
-							<a href="./images/resume.pdf" class="button-circle" download="이력서_조정우">
-								<div class="button-bg"></div>
-								<span>이력서 보기</span>
-							</a>
+					<div class="col-md-4 popup-text">
+						<h2>Folex</h2>
+						<p>
+							Fullpage js를 사용하여 제작한 포트폴리오사이트입니다. work페이지를
+							ajax를 이용해 더보기를 만들었습니다. 제작후에 wordpress를 붙여서
+							테마작업을 하였습니다.
+						</p>
+						<div class="icon-box">
+							<img src="./images/icon/html@2x.png" alt="html image" />
+							<img src="./images/icon/css-3@2x.png" alt="css image" />
+							<img src="./images/icon/js@2x.png" alt="js image" />
 						</div>
-						<div class="col-12 col-md-6 col-lg-6 talk-container" data-scroll data-scroll-speed="2">
-							<h3>카카오톡 오픈 채팅하기</h3>
-							<img src="./images/lg/kakaotalk-img.png" alt="kakaotalk img">
+						<h3>기능: fullpage js / swiper js / google map</h3>
+						<a
+							href="https://everydayho.github.io/folex-website"
+							class="button-circle"
+							target="_blank"
+						>
+							<div class="button-bg"></div>
+							<span>VIEW SITE</span>
+						</a>
+						<a
+							href="http://hoit12.dothome.co.kr/wp/"
+							class="button-circle"
+							target="_blank"
+						>
+							<div class="button-bg"></div>
+							<span>VIEW WP</span>
+						</a>
+					</div>
+					<div class="col-md-8 popup-img">
+						<p class="modal-image">
+							<img src="./images/modal/1@2x.png" alt="project image1" />
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- popup3 -->
+		<div id="popup3" class="white-popup mfp-hide">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 popup-text">
+						<h2>Hyundai Motors</h2>
+						<p>
+							1200 그리드 시스템을 사용하여 XD, 포토샵으로 디자인 시안을 토대로
+							블로그 사이트를 제작하였습니다.
+						</p>
+						<div class="icon-box">
+							<img src="./images/icon/html@2x.png" alt="html image" />
+							<img src="./images/icon/css-3@2x.png" alt="css image" />
 						</div>
+						<a
+							href="http://hoit123.cafe24.com/project3"
+							class="button-circle"
+							target="_blank"
+						>
+							<div class="button-bg"></div>
+							<span>VIEW SITE</span>
+						</a>
+					</div>
+					<div class="col-md-8 popup-img">
+						<p class="modal-image">
+							<img src="./images/modal/3@2x.png" alt="project image3" />
+						</p>
 					</div>
 				</div>
 			</div>
-		</section>
-	</main>
+		</div>
+		<!-- popup4 -->
+		<div id="popup4" class="white-popup mfp-hide">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 popup-text">
+						<h2>Samsung JBL</h2>
+						<p>
+							삼성 JBL사이트를 1200 그리드 시스템 템플릿 작업을 토대로
+							제작하였습니다. 스크롤시 메뉴바에 동적이 효과를 주었으며, 고객
+							설문 팝업창을 구현하였습니다.
+						</p>
+						<div class="icon-box">
+							<img src="./images/icon/html@2x.png" alt="html image" />
+							<img src="./images/icon/css-3@2x.png" alt="css image" />
+							<img src="./images/icon/js@2x.png" alt="js image" />
+						</div>
+						<a
+							href="http://hoit123.cafe24.com/project4"
+							class="button-circle"
+							target="_blank"
+						>
+							<div class="button-bg"></div>
+							<span>VIEW SITE</span>
+						</a>
+					</div>
+					<div class="col-md-8 popup-img">
+						<p class="modal-image">
+							<img src="./images/modal/4@2x.png" alt="project image4" />
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- popup5 -->
+		<div id="popup5" class="white-popup mfp-hide">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 popup-text">
+						<h2>Retina Web Design</h2>
+						<p>
+							템플릿 작업을 바탕으로 웹디자인 회사 사이트를 제작했습니다. 메뉴
+							페이지를 전부 제작하였으며, 슬라이더 효과, 필터링 효과를
+							라이브러리를 사용하요 구현하였습니다.
+						</p>
+						<div class="icon-box">
+							<img src="./images/icon/html@2x.png" alt="html image" />
+							<img src="./images/icon/css-3@2x.png" alt="css image" />
+							<img src="./images/icon/js@2x.png" alt="js image" />
+						</div>
+						<h3>기능: Swiper.js / Cubeportfolio.js</h3>
+						<a
+							href="http://hoit123.cafe24.com/project5"
+							class="button-circle"
+							target="_blank"
+						>
+							<div class="button-bg"></div>
+							<span>VIEW SITE</span>
+						</a>
+					</div>
+					<div class="col-md-8 popup-img">
+						<p class="modal-image">
+							<img src="./images/modal/5@2x.png" alt="project image5" />
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- popup6 -->
+		<div id="popup6" class="white-popup mfp-hide">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 popup-text">
+						<h2>Web Developement Company Site</h2>
+						<p>
+							부트스트랩 그리드 시스템을 사용하여 회사 사이트를 반응형으로
+							제작하였습니다. 스크롤 시 애니매이션 효과를 주었으며, 프로젝트들에
+							필터기능을 추가했습니다.
+						</p>
+						<div class="icon-box">
+							<img src="./images/icon/html@2x.png" alt="html image" />
+							<img src="./images/icon/css-3@2x.png" alt="css image" />
+							<img src="./images/icon/js@2x.png" alt="js image" />
+						</div>
+						<h3>기능: Bootstrap / Parallax js / Gsap</h3>
+						<a
+							href="http://hoit123.cafe24.com/responsiveweb1"
+							class="button-circle"
+							target="_blank"
+						>
+							<div class="button-bg"></div>
+							<span>VIEW SITE</span>
+						</a>
+					</div>
+					<div class="col-md-8 popup-img">
+						<p class="modal-image">
+							<img src="./images/modal/6@2x.png" alt="project image6" />
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- popup7 -->
+		<div id="popup7" class="white-popup mfp-hide">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 popup-text">
+						<h2>Megabox</h2>
+						<p>
+							Vue 프레임워크를 사용하여 메가박스 앱을 제작했습니다.
+							Webpack,scss를 이용하여 구현하였습니다.
+						</p>
+						<div class="icon-box">
+							<img src="./images/icon/html@2x.png" alt="html image" />
+							<img src="./images/icon/sass@2x.png" alt="sass image" />
+							<img src="./images/icon/js@2x.png" alt="js image" />
+							<img src="./images/icon/vue@2x.png" alt="vue image" />
+						</div>
+						<h3>기능: vue2 / Swiper js</h3>
+						<a
+							href="https://rad-biscotti-9bce84.netlify.app/"
+							class="button-circle"
+							target="_blank"
+						>
+							<div class="button-bg"></div>
+							<span>VIEW SITE</span>
+						</a>
+					</div>
+					<div class="col-md-8 popup-img">
+						<p class="modal-image">
+							<img src="./images/modal/7@2x.png" alt="project image7" />
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- popup8 -->
+		<div id="popup8" class="white-popup mfp-hide">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 popup-text">
+						<h2>Web App project</h2>
+						<p>
+							Vue 프레임워크를 사용하여 모바일 포트폴리오 앱을 제작했습니다.
+							materialize css, magnific-popup를 이용하여 구현하였습니다.
+						</p>
+						<div class="icon-box">
+							<img src="./images/icon/html@2x.png" alt="html image" />
+							<img src="./images/icon/sass@2x.png" alt="sass image" />
+							<img src="./images/icon/js@2x.png" alt="js image" />
+							<img src="./images/icon/vue@2x.png" alt="vue image" />
+						</div>
+						<h3>기능: vue2 / magnific-popup</h3>
+						<a
+							href="https://cosmic-dragon-662e06.netlify.app/"
+							class="button-circle"
+							target="_blank"
+						>
+							<div class="button-bg"></div>
+							<span>VIEW SITE</span>
+						</a>
+					</div>
+					<div class="col-md-8 popup-img">
+						<p class="modal-image">
+							<img src="./images/modal/8@2x.png" alt="project image7" />
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- popup9 -->
+		<div id="popup9" class="white-popup mfp-hide">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 popup-text">
+						<h2>Phono</h2>
+						<p>
+							sass문법을 사용하여 헤드폰사이트를 제작하였습니다. parallax
+							레이아웃과 이미지를 클릭하면 팝업창이 열리도록 구현하였습니다.
+						</p>
+						<div class="icon-box">
+							<img src="./images/icon/html@2x.png" alt="html image" />
+							<img src="./images/icon/sass@2x.png" alt="sass image" />
+							<img src="./images/icon/js@2x.png" alt="js image" />
+						</div>
+						<a
+							href="http://hoit123.cafe24.com/sassproject1"
+							class="button-circle"
+							target="_blank"
+						>
+							<div class="button-bg"></div>
+							<span>VIEW SITE</span>
+						</a>
+					</div>
+					<div class="col-md-8 popup-img">
+						<p class="modal-image">
+							<img src="./images/modal/9@2x.png" alt="project image7" />
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- popup10 -->
+		<div id="popup10" class="white-popup mfp-hide">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 popup-text">
+						<h2>Moblie Portfolio App</h2>
+						<p>
+							vue3사용하여 모바일 포트폴리오 사이트를 제작하였습니다. webpack,
+							scss문법을 사용하여 구현하였습니다.
+						</p>
+						<div class="icon-box">
+							<img src="./images/icon/html@2x.png" alt="html image" />
+							<img src="./images/icon/sass@2x.png" alt="sass image" />
+							<img src="./images/icon/js@2x.png" alt="js image" />
+							<img src="./images/icon/vue@2x.png" alt="vue image" />
+						</div>
+						<h3>기능: vue3 / swiper js</h3>
+						<a
+							href="https://everydayho.netlify.app/"
+							class="button-circle"
+							target="_blank"
+						>
+							<div class="button-bg"></div>
+							<span>VIEW SITE</span>
+						</a>
+					</div>
+					<div class="col-md-8 popup-img">
+						<p class="modal-image">
+							<img src="./images/modal/10@2x.png" alt="project image7" />
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- popup11 -->
+		<div id="popup11" class="white-popup mfp-hide">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 popup-text">
+						<h2>Starbucks Web Site</h2>
+						<p>
+							gsap 사용하여 애니메이션 효과와 swiper js를 사용하여 슬라이더
+							효과를 넣어 스타벅스 사이트를 제작하였습니다. Youtube API를
+							사용하여 영상을 넣었습니다.
+						</p>
+						<div class="icon-box">
+							<img src="./images/icon/html@2x.png" alt="html image" />
+							<img src="./images/icon/css-3.png" alt="sass image" />
+							<img src="./images/icon/js@2x.png" alt="js image" />
+						</div>
+						<h3>기능: swiper js / gsap / scrollmagic</h3>
+						<a
+							href="https://ecstatic-ritchie-85dba5.netlify.app/"
+							class="button-circle"
+							target="_blank"
+						>
+							<div class="button-bg"></div>
+							<span>VIEW SITE</span>
+						</a>
+					</div>
+					<div class="col-md-8 popup-img">
+						<p class="modal-image">
+							<img src="./images/modal/11@2x.png" alt="project image11" />
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- popup12 -->
+		<div id="popup12" class="white-popup mfp-hide">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 popup-text">
+						<h2>OMDB API 영화검색 사이트</h2>
+						<p>
+							vue프레임워크를 사용한 영화 검색사이트입니다. OMDB API를 이용해서
+							영화를 검색하면 영화정보가 나오게 제작하였습니다.
+						</p>
+						<div class="icon-box">
+							<img src="./images/icon/html@2x.png" alt="html image" />
+							<img src="./images/icon/css-3.png" alt="sass image" />
+							<img src="./images/icon/js@2x.png" alt="js image" />
+							<img src="./images/icon/vue@2x.png" alt="vue image" />
+						</div>
+						<h3>기능: vue / bootstrap</h3>
+						<a
+							href="https://brave-tereshkova-6ea9e2.netlify.app/"
+							class="button-circle"
+							target="_blank"
+						>
+							<div class="button-bg"></div>
+							<span>VIEW SITE</span>
+						</a>
+					</div>
+					<div class="col-md-8 popup-img">
+						<p class="modal-image">
+							<img src="./images/modal/12@2x.png" alt="project image11" />
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- popup13 -->
+		<div id="popup13" class="white-popup mfp-hide">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 popup-text">
+						<h2>Expire</h2>
+						<p>
+							bxslider와 parallax를 이용해서 기업 포트폴리오 사이트를
+							제작하였습니다. 폴더모양으로 전체적인 디자인한 사이트입니다.
+						</p>
+						<div class="icon-box">
+							<img src="./images/icon/html@2x.png" alt="html image" />
+							<img src="./images/icon/css-3.png" alt="css image" />
+							<img src="./images/icon/js@2x.png" alt="js image" />
+						</div>
+						<h3>기능: bx slider / parallax</h3>
+						<a
+							href="https://hoit123.cafe24.com/expire"
+							class="button-circle"
+							target="_blank"
+						>
+							<div class="button-bg"></div>
+							<span>VIEW SITE</span>
+						</a>
+					</div>
+					<div class="col-md-8 popup-img">
+						<p class="modal-image">
+							<img src="./images/modal/13@2x.png" alt="project image11" />
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- popup14 -->
+		<div id="popup14" class="white-popup mfp-hide">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 popup-text">
+						<h2>Mobile Shopping Site</h2>
+						<p>
+							모바일과 브라우저 접속을 구분하여 만든 모바일 쇼핑 사이트입니다.
+							sweetalert 라이브러리를 사용하여 제품 수량이 삭제되면 모달창이
+							나오게 만들었습니다. 제품의 수량이 더하거나 빠지면 자동으로 계산이
+							되도록 하였습니다.
+						</p>
+						<div class="icon-box">
+							<img src="./images/icon/html@2x.png" alt="html image" />
+							<img src="./images/icon/css-3.png" alt="css image" />
+							<img src="./images/icon/js@2x.png" alt="js image" />
+						</div>
+						<h3>기능: modernizr / sweetalert</h3>
+						<a
+							href="https://everydayho.github.io/mobile_shop/"
+							class="button-circle"
+							target="_blank"
+						>
+							<div class="button-bg"></div>
+							<span>VIEW SITE</span>
+						</a>
+					</div>
+					<div class="col-md-8 popup-img">
+						<p class="modal-image">
+							<img src="./images/modal/14@2x.png" alt="project image11" />
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- popup15 -->
+		<div id="popup15" class="white-popup mfp-hide">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 popup-text">
+						<h2>Shopy Shopping mall</h2>
+						<p>
+							템플릿을 가지고 쇼핑몰 사이트를 만든 뒤 카페24모듈 시스템에
+							작업하여 카페24호스팅에 붙여서 제작하였습니다.
+						</p>
+						<div class="icon-box">
+							<img src="./images/icon/html@2x.png" alt="html image" />
+							<img src="./images/icon/css-3.png" alt="css image" />
+							<img src="./images/icon/js@2x.png" alt="js image" />
+						</div>
+						<a
+							href="https://everydayho.github.io/sophy-website/"
+							class="button-circle"
+							target="_blank"
+						>
+							<div class="button-bg"></div>
+							<span>VIEW SITE</span>
+						</a>
+						<a
+							href="https://hoit12.cafe24.com/"
+							class="button-circle"
+							target="_blank"
+						>
+							<div class="button-bg"></div>
+							<span>VIEW CAFE24</span>
+						</a>
+					</div>
+					<div class="col-md-8 popup-img">
+						<p class="modal-image">
+							<img src="./images/modal/15@2x.png" alt="project image11" />
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- popup16 -->
+		<div id="popup16" class="white-popup mfp-hide">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 popup-text">
+						<h2>Waxom Company Site</h2>
+						<p>
+							데스크탑과 모바일사이즈으로 제작한 반응형 사이트입니다. swiper
+							js와 mixitup 라이브러리를 사용하요 프로젝트를 필터링하였습니다.
+						</p>
+						<div class="icon-box">
+							<img src="./images/icon/html@2x.png" alt="html image" />
+							<img src="./images/icon/css-3.png" alt="css image" />
+							<img src="./images/icon/js@2x.png" alt="js image" />
+						</div>
+						<h3>기능: siwper js / mixitup</h3>
 
-	<!-- popup1 -->
-	<div id="popup1" class="white-popup mfp-hide">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 popup-text">
-					<h2>Folex</h2>
-					<p>
-						Fullpage js를 사용하여 제작한 포트폴리오사이트입니다. work페이지를
-						ajax를 이용해 더보기를 만들었습니다. 제작후에 wordpress를 붙여서
-						테마작업을 하였습니다.
-					</p>
-					<div class="icon-box">
-						<img src="./images/icon/html@2x.png" alt="html image">
-						<img src="./images/icon/css-3@2x.png" alt="css image">
-						<img src="./images/icon/js@2x.png" alt="js image">
+						<a
+							href="https://gilded-figolla-13462e.netlify.app"
+							class="button-circle"
+							target="_blank"
+						>
+							<div class="button-bg"></div>
+							<span>VIEW SITE</span>
+						</a>
 					</div>
-					<h3>기능: fullpage js / swiper js / google map</h3>
-					<a href="https://everydayho.github.io/folex-website" class="button-circle" target="_blank">
-						<div class="button-bg"></div>
-						<span>VIEW SITE</span>
-					</a>
-					<a href="http://hoit12.dothome.co.kr/wp/" class="button-circle" target="_blank">
-						<div class="button-bg"></div>
-						<span>VIEW WP</span>
-					</a>
-				</div>
-				<div class="col-md-8 popup-img">
-					<p class="modal-image">
-						<img src="./images/modal/1@2x.png" alt="project image1">
-					</p>
+					<div class="col-md-8 popup-img">
+						<p class="modal-image">
+							<img src="./images/modal/16@2x.png" alt="project image11" />
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- popup3 -->
-	<div id="popup3" class="white-popup mfp-hide">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 popup-text">
-					<h2>Hyundai Motors</h2>
-					<p>
-						1200 그리드 시스템을 사용하여 XD, 포토샵으로 디자인 시안을 토대로
-						블로그 사이트를 제작하였습니다.
-					</p>
-					<div class="icon-box">
-						<img src="./images/icon/html@2x.png" alt="html image">
-						<img src="./images/icon/css-3@2x.png" alt="css image">
-					</div>
-					<a href="http://hoit123.cafe24.com/project3" class="button-circle" target="_blank">
-						<div class="button-bg"></div>
-						<span>VIEW SITE</span>
-					</a>
-				</div>
-				<div class="col-md-8 popup-img">
-					<p class="modal-image">
-						<img src="./images/modal/3@2x.png" alt="project image3">
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- popup4 -->
-	<div id="popup4" class="white-popup mfp-hide">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 popup-text">
-					<h2>Samsung JBL</h2>
-					<p>
-						삼성 JBL사이트를 1200 그리드 시스템 템플릿 작업을 토대로
-						제작하였습니다. 스크롤시 메뉴바에 동적이 효과를 주었으며, 고객
-						설문 팝업창을 구현하였습니다.
-					</p>
-					<div class="icon-box">
-						<img src="./images/icon/html@2x.png" alt="html image">
-						<img src="./images/icon/css-3@2x.png" alt="css image">
-						<img src="./images/icon/js@2x.png" alt="js image">
-					</div>
-					<a href="http://hoit123.cafe24.com/project4" class="button-circle" target="_blank">
-						<div class="button-bg"></div>
-						<span>VIEW SITE</span>
-					</a>
-				</div>
-				<div class="col-md-8 popup-img">
-					<p class="modal-image">
-						<img src="./images/modal/4@2x.png" alt="project image4">
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- popup5 -->
-	<div id="popup5" class="white-popup mfp-hide">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 popup-text">
-					<h2>Retina Web Design</h2>
-					<p>
-						템플릿 작업을 바탕으로 웹디자인 회사 사이트를 제작했습니다. 메뉴
-						페이지를 전부 제작하였으며, 슬라이더 효과, 필터링 효과를
-						라이브러리를 사용하요 구현하였습니다.
-					</p>
-					<div class="icon-box">
-						<img src="./images/icon/html@2x.png" alt="html image">
-						<img src="./images/icon/css-3@2x.png" alt="css image">
-						<img src="./images/icon/js@2x.png" alt="js image">
-					</div>
-					<h3>기능: Swiper.js / Cubeportfolio.js</h3>
-					<a href="http://hoit123.cafe24.com/project5" class="button-circle" target="_blank">
-						<div class="button-bg"></div>
-						<span>VIEW SITE</span>
-					</a>
-				</div>
-				<div class="col-md-8 popup-img">
-					<p class="modal-image">
-						<img src="./images/modal/5@2x.png" alt="project image5">
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- popup6 -->
-	<div id="popup6" class="white-popup mfp-hide">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 popup-text">
-					<h2>Web Developement Company Site</h2>
-					<p>
-						부트스트랩 그리드 시스템을 사용하여 회사 사이트를 반응형으로
-						제작하였습니다. 스크롤 시 애니매이션 효과를 주었으며, 프로젝트들에
-						필터기능을 추가했습니다.
-					</p>
-					<div class="icon-box">
-						<img src="./images/icon/html@2x.png" alt="html image">
-						<img src="./images/icon/css-3@2x.png" alt="css image">
-						<img src="./images/icon/js@2x.png" alt="js image">
-					</div>
-					<h3>기능: Bootstrap / Parallax js / Gsap</h3>
-					<a href="http://hoit123.cafe24.com/responsiveweb1" class="button-circle" target="_blank">
-						<div class="button-bg"></div>
-						<span>VIEW SITE</span>
-					</a>
-				</div>
-				<div class="col-md-8 popup-img">
-					<p class="modal-image">
-						<img src="./images/modal/6@2x.png" alt="project image6">
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- popup7 -->
-	<div id="popup7" class="white-popup mfp-hide">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 popup-text">
-					<h2>Megabox</h2>
-					<p>
-						Vue 프레임워크를 사용하여 메가박스 앱을 제작했습니다.
-						Webpack,scss를 이용하여 구현하였습니다.
-					</p>
-					<div class="icon-box">
-						<img src="./images/icon/html@2x.png" alt="html image">
-						<img src="./images/icon/sass@2x.png" alt="sass image">
-						<img src="./images/icon/js@2x.png" alt="js image">
-						<img src="./images/icon/vue@2x.png" alt="vue image">
-					</div>
-					<h3>기능: vue2 / Swiper js</h3>
-					<a href="https://rad-biscotti-9bce84.netlify.app/" class="button-circle" target="_blank">
-						<div class="button-bg"></div>
-						<span>VIEW SITE</span>
-					</a>
-				</div>
-				<div class="col-md-8 popup-img">
-					<p class="modal-image">
-						<img src="./images/modal/7@2x.png" alt="project image7">
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- popup8 -->
-	<div id="popup8" class="white-popup mfp-hide">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 popup-text">
-					<h2>Web App project</h2>
-					<p>
-						Vue 프레임워크를 사용하여 모바일 포트폴리오 앱을 제작했습니다.
-						materialize css, magnific-popup를 이용하여 구현하였습니다.
-					</p>
-					<div class="icon-box">
-						<img src="./images/icon/html@2x.png" alt="html image">
-						<img src="./images/icon/sass@2x.png" alt="sass image">
-						<img src="./images/icon/js@2x.png" alt="js image">
-						<img src="./images/icon/vue@2x.png" alt="vue image">
-					</div>
-					<h3>기능: vue2 / magnific-popup</h3>
-					<a href="https://cosmic-dragon-662e06.netlify.app/" class="button-circle" target="_blank">
-						<div class="button-bg"></div>
-						<span>VIEW SITE</span>
-					</a>
-				</div>
-				<div class="col-md-8 popup-img">
-					<p class="modal-image">
-						<img src="./images/modal/8@2x.png" alt="project image7">
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- popup9 -->
-	<div id="popup9" class="white-popup mfp-hide">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 popup-text">
-					<h2>Phono</h2>
-					<p>
-						sass문법을 사용하여 헤드폰사이트를 제작하였습니다. parallax
-						레이아웃과 이미지를 클릭하면 팝업창이 열리도록 구현하였습니다.
-					</p>
-					<div class="icon-box">
-						<img src="./images/icon/html@2x.png" alt="html image">
-						<img src="./images/icon/sass@2x.png" alt="sass image">
-						<img src="./images/icon/js@2x.png" alt="js image">
-					</div>
-					<a href="http://hoit123.cafe24.com/sassproject1" class="button-circle" target="_blank">
-						<div class="button-bg"></div>
-						<span>VIEW SITE</span>
-					</a>
-				</div>
-				<div class="col-md-8 popup-img">
-					<p class="modal-image">
-						<img src="./images/modal/9@2x.png" alt="project image7">
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- popup10 -->
-	<div id="popup10" class="white-popup mfp-hide">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 popup-text">
-					<h2>Moblie Portfolio App</h2>
-					<p>
-						vue3사용하여 모바일 포트폴리오 사이트를 제작하였습니다. webpack,
-						scss문법을 사용하여 구현하였습니다.
-					</p>
-					<div class="icon-box">
-						<img src="./images/icon/html@2x.png" alt="html image">
-						<img src="./images/icon/sass@2x.png" alt="sass image">
-						<img src="./images/icon/js@2x.png" alt="js image">
-						<img src="./images/icon/vue@2x.png" alt="vue image">
-					</div>
-					<h3>기능: vue3 / swiper js</h3>
-					<a href="https://everydayho.netlify.app/" class="button-circle" target="_blank">
-						<div class="button-bg"></div>
-						<span>VIEW SITE</span>
-					</a>
-				</div>
-				<div class="col-md-8 popup-img">
-					<p class="modal-image">
-						<img src="./images/modal/10@2x.png" alt="project image7">
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- popup11 -->
-	<div id="popup11" class="white-popup mfp-hide">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 popup-text">
-					<h2>Starbucks Web Site</h2>
-					<p>
-						gsap 사용하여 애니메이션 효과와 swiper js를 사용하여 슬라이더
-						효과를 넣어 스타벅스 사이트를 제작하였습니다. Youtube API를
-						사용하여 영상을 넣었습니다.
-					</p>
-					<div class="icon-box">
-						<img src="./images/icon/html@2x.png" alt="html image">
-						<img src="./images/icon/css-3.png" alt="sass image">
-						<img src="./images/icon/js@2x.png" alt="js image">
-					</div>
-					<h3>기능: swiper js / gsap / scrollmagic</h3>
-					<a href="https://ecstatic-ritchie-85dba5.netlify.app/" class="button-circle" target="_blank">
-						<div class="button-bg"></div>
-						<span>VIEW SITE</span>
-					</a>
-				</div>
-				<div class="col-md-8 popup-img">
-					<p class="modal-image">
-						<img src="./images/modal/11@2x.png" alt="project image11">
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- popup12 -->
-	<div id="popup12" class="white-popup mfp-hide">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 popup-text">
-					<h2>OMDB API 영화검색 사이트</h2>
-					<p>
-						vue프레임워크를 사용한 영화 검색사이트입니다. OMDB API를 이용해서
-						영화를 검색하면 영화정보가 나오게 제작하였습니다.
-					</p>
-					<div class="icon-box">
-						<img src="./images/icon/html@2x.png" alt="html image">
-						<img src="./images/icon/css-3.png" alt="sass image">
-						<img src="./images/icon/js@2x.png" alt="js image">
-						<img src="./images/icon/vue@2x.png" alt="vue image">
-					</div>
-					<h3>기능: vue / bootstrap</h3>
-					<a href="https://brave-tereshkova-6ea9e2.netlify.app/" class="button-circle" target="_blank">
-						<div class="button-bg"></div>
-						<span>VIEW SITE</span>
-					</a>
-				</div>
-				<div class="col-md-8 popup-img">
-					<p class="modal-image">
-						<img src="./images/modal/12@2x.png" alt="project image11">
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- popup13 -->
-	<div id="popup13" class="white-popup mfp-hide">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 popup-text">
-					<h2>Expire</h2>
-					<p>
-						bxslider와 parallax를 이용해서 기업 포트폴리오 사이트를
-						제작하였습니다. 폴더모양으로 전체적인 디자인한 사이트입니다.
-					</p>
-					<div class="icon-box">
-						<img src="./images/icon/html@2x.png" alt="html image">
-						<img src="./images/icon/css-3.png" alt="css image">
-						<img src="./images/icon/js@2x.png" alt="js image">
-					</div>
-					<h3>기능: bx slider / parallax</h3>
-					<a href="https://hoit123.cafe24.com/expire" class="button-circle" target="_blank">
-						<div class="button-bg"></div>
-						<span>VIEW SITE</span>
-					</a>
-				</div>
-				<div class="col-md-8 popup-img">
-					<p class="modal-image">
-						<img src="./images/modal/13@2x.png" alt="project image11">
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- popup14 -->
-	<div id="popup14" class="white-popup mfp-hide">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 popup-text">
-					<h2>Mobile Shopping Site</h2>
-					<p>
-						모바일과 브라우저 접속을 구분하여 만든 모바일 쇼핑 사이트입니다.
-						sweetalert 라이브러리를 사용하여 제품 수량이 삭제되면 모달창이
-						나오게 만들었습니다. 제품의 수량이 더하거나 빠지면 자동으로 계산이
-						되도록 하였습니다.
-					</p>
-					<div class="icon-box">
-						<img src="./images/icon/html@2x.png" alt="html image">
-						<img src="./images/icon/css-3.png" alt="css image">
-						<img src="./images/icon/js@2x.png" alt="js image">
-					</div>
-					<h3>기능: modernizr / sweetalert</h3>
-					<a href="https://everydayho.github.io/mobile_shop/" class="button-circle" target="_blank">
-						<div class="button-bg"></div>
-						<span>VIEW SITE</span>
-					</a>
-				</div>
-				<div class="col-md-8 popup-img">
-					<p class="modal-image">
-						<img src="./images/modal/14@2x.png" alt="project image11">
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- popup15 -->
-	<div id="popup15" class="white-popup mfp-hide">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 popup-text">
-					<h2>Shopy Shopping mall</h2>
-					<p>
-						템플릿을 가지고 쇼핑몰 사이트를 만든 뒤 카페24모듈 시스템에
-						작업하여 카페24호스팅에 붙여서 제작하였습니다.
-					</p>
-					<div class="icon-box">
-						<img src="./images/icon/html@2x.png" alt="html image">
-						<img src="./images/icon/css-3.png" alt="css image">
-						<img src="./images/icon/js@2x.png" alt="js image">
-					</div>
-					<a href="https://everydayho.github.io/sophy-website/" class="button-circle" target="_blank">
-						<div class="button-bg"></div>
-						<span>VIEW SITE</span>
-					</a>
-					<a href="https://hoit12.cafe24.com/" class="button-circle" target="_blank">
-						<div class="button-bg"></div>
-						<span>VIEW CAFE24</span>
-					</a>
-				</div>
-				<div class="col-md-8 popup-img">
-					<p class="modal-image">
-						<img src="./images/modal/15@2x.png" alt="project image11">
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- popup16 -->
-	<div id="popup16" class="white-popup mfp-hide">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 popup-text">
-					<h2>Waxom Company Site</h2>
-					<p>
-						데스크탑과 모바일사이즈으로 제작한 반응형 사이트입니다. swiper
-						js와 mixitup 라이브러리를 사용하요 프로젝트를 필터링하였습니다.
-					</p>
-					<div class="icon-box">
-						<img src="./images/icon/html@2x.png" alt="html image">
-						<img src="./images/icon/css-3.png" alt="css image">
-						<img src="./images/icon/js@2x.png" alt="js image">
-					</div>
-					<h3>기능: siwper js / mixitup</h3>
-
-					<a href="https://gilded-figolla-13462e.netlify.app" class="button-circle" target="_blank">
-						<div class="button-bg"></div>
-						<span>VIEW SITE</span>
-					</a>
-				</div>
-				<div class="col-md-8 popup-img">
-					<p class="modal-image">
-						<img src="./images/modal/16@2x.png" alt="project image11">
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- arrow up -->
-	<div class="progress-wrap active-progress" data-cursor-class="arrow">
-		<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="
+		<!-- arrow up -->
+		<div class="progress-wrap active-progress" data-cursor-class="arrow">
+			<svg
+				class="progress-circle svg-content"
+				width="100%"
+				height="100%"
+				viewBox="-1 -1 102 102"
+			>
+				<path
+					d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+					style="
 						transition: stroke-dashoffset 10ms linear 0s;
 						stroke-dasharray: 307.919, 307.919;
 						stroke-dashoffset: 35.4911;
-					"></path>
-		</svg>
-	</div>
-</body>
-
+					"
+				></path>
+			</svg>
+		</div>
+	</body>
 </html>
