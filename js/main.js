@@ -246,6 +246,7 @@ window.addEventListener('load', function () {
 			ScrollTrigger.refresh();
 		},
 	});
+	ScrollTrigger.refresh();
 });
 
 // skill counter

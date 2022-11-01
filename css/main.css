@@ -686,6 +686,7 @@ main {
 /* --------- What I do --------- */
 
 #whatido {
+	width: 100%;
 	position: relative;
 }
 #whatido .ido-text {
@@ -707,7 +708,6 @@ main {
 	display: flex;
 	justify-content: flex-start;
 	padding: 50px 10vw;
-	overflow: hidden;
 }
 
 /* service card */
