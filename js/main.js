@@ -150,34 +150,6 @@ $('.tlt').textillate({
 	},
 });
 
-// img mouse move
-
-let img1 = document.querySelector('#about .about-img img ');
-let imgBox = document.querySelector('#about .about-img');
-let x = 0,
-	y = 0;
-let mx = 0,
-	my = 0;
-const speed1 = 1;
-const loop1 = () => {
-	mx += (x - mx) * speed1;
-	my += (y - my) * speed1;
-	window.requestAnimationFrame(loop1);
-};
-
-loop1();
-const mouseFunc = (e) => {
-	(x = e.clientX - window.innerWidth / 2),
-		(y = e.clientY - window.innerHeight / 2);
-	img1.style.transform = `translate(${-(mx / 50)}px, ${-(my / 70)}px)`;
-	imgBox.style.transform = `translate(${mx / 30}px, ${my / 60}px)`;
-};
-window.addEventListener('mousemove', mouseFunc);
-window.addEventListener('touchstart', mouseFunc);
-window.addEventListener('touchmove', mouseFunc);
-window.addEventListener('touchleave', mouseFunc);
-window.addEventListener('touchend', mouseFunc);
-
 //smooth controll
 gsap.registerPlugin(ScrollTrigger);
 
