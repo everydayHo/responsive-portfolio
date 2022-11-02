@@ -1128,16 +1128,14 @@ main {
 	width: 48%;
 	text-align: center;
 	border-radius: 20px;
-	cursor: pointer;
 	overflow: hidden;
-}
-figure.project-card {
-	border-radius: 20px;
+	isolation: isolate;
 }
 
 .grid figure img {
 	position: relative;
 	display: block;
+	border-radius: 20px;
 	min-height: 100%;
 	max-width: 100%;
 	opacity: 0.95;
